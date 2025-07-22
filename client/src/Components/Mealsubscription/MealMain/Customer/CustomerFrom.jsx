@@ -57,11 +57,12 @@ function CustomerForm({ selectedItems = [], clearSelectedItems }) {
       //   body: JSON.stringify({ ...formData, selectedItems }),
       // });
 
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/customer-form`, {
+const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/customer-form`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ ...formData, selectedItems }),
 });
+
 
 
       if (response.ok) {

@@ -188,11 +188,12 @@ const FranchisePopup = ({ toggleForm }) => {
         //   body: JSON.stringify(formData)
         // });
 
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send-franchise-request`, {
+  const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/franchise-form`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(formData),
 });
+
 
         if (response.ok) {
           setShowToast(true);

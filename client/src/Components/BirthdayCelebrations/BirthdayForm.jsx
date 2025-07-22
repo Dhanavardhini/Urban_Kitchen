@@ -138,33 +138,58 @@ function BirthdayForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setSuccess(false);
+  //   setError('');
+
+  //   setLoading(true);
+  //   try {
+  //     // await axios.post('http://localhost:5000/event-mail', formData);
+  //     await axios.post(`${import.meta.env.VITE_BACKEND_URL}/event-mail`, formData);
+
+
+  //     // await axios.post('https://urban-kitchen.onrender.com/event-mail', formData);
+
+  //     setSuccess(true);
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       phone: '',
+  //       eventType: '',
+  //       message: '',
+  //     });
+  //   } catch (err) {
+  //     setError('❌ Submission failed. Please try again.');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSuccess(false);
-    setError('');
+  e.preventDefault();
+  setSuccess(false);
+  setError('');
+  setLoading(true);
 
-    setLoading(true);
-    try {
-      // await axios.post('http://localhost:5000/event-mail', formData);
-      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/event-mail`, formData);
+  try {
+    await axios.post(`${import.meta.env.VITE_BACKEND_URL}/event-form`, formData);
 
-
-      // await axios.post('https://urban-kitchen.onrender.com/event-mail', formData);
-
-      setSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        eventType: '',
-        message: '',
-      });
-    } catch (err) {
-      setError('❌ Submission failed. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
+    setSuccess(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      eventType: '',
+      message: '',
+    });
+  } catch (err) {
+    console.error(err);
+    setError('❌ Submission failed. Please try again.');
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="custom-form-wrapper">
