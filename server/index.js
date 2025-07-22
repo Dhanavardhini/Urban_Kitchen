@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Import all forms
+// Import routes
 const commonFormRoute = require('./forms/commonform');
 const customerFormRoute = require('./forms/customerform');
 const eventFormRoute = require('./forms/eventform');

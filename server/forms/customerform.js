@@ -175,14 +175,13 @@
 // module.exports = router;
 
 
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { firstName, lastName, email, phone, selectedItems, planName, planDuration } = req.body;
-
-  const itemList = selectedItems.map(item => `<li>${item}</li>`).join('');
+  const { name, email, phone, address, selectedItems } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -192,7 +191,9 @@ router.post('/', async (req, res) => {
     },
   });
 
-  const mailOptions = {
+  const itemList = selectedItems?.map(item => `<li>${item}</li>`).join('') || '';
+
+   const mailOptions = {
     from: `"${firstName} ${lastName} via Urban Kitchens" <${process.env.MAIL_USER}>`,
     to: process.env.RECEIVER_EMAIL,
     replyTo: email,
@@ -226,10 +227,10 @@ router.post('/', async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: 'Customer meal request sent successfully.' });
-  } catch (err) {
-    console.error('Email error:', err);
-    res.status(500).json({ message: 'Failed to send email.' });
+    res.status(200).json({ message: 'Customer form sent successfully.' });
+  } catch (error) {
+    console.error('Email error:', error);
+    res.status(500).json({ message: 'Failed to send customer form.' });
   }
 });
 

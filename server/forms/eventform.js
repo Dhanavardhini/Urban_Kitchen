@@ -101,7 +101,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { name, email, phone, eventType, message } = req.body;
+  const { name, email, phone, eventType, eventDate, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -111,24 +111,7 @@ router.post('/', async (req, res) => {
     },
   });
 
-  // const mailOptions = {
-  //   from: `"${name} via Urban Kitchens" <${process.env.MAIL_USER}>`,
-  //   to: process.env.RECEIVER_EMAIL,
-  //   replyTo: email,
-  //   subject: '🎉 Event Booking Request',
-  //   html: `
-  //     <div style="font-family: Arial;">
-  //       <h2>🎊 Event Booking Details</h2>
-  //       <p><strong>Name:</strong> ${name}</p>
-  //       <p><strong>Email:</strong> ${email}</p>
-  //       <p><strong>Phone:</strong> ${phone}</p>
-  //       <p><strong>Event Type:</strong> ${eventType}</p>
-  //       <p><strong>Message:</strong> ${message}</p>
-  //     </div>
-  //   `,
-  // };
-
-   const mailOptions = {
+    const mailOptions = {
     from: `"${name} via Event Booking Form" <${process.env.MAIL_USER}>`,
     to: process.env.RECEIVER_EMAIL,
     replyTo: email,
@@ -172,9 +155,9 @@ router.post('/', async (req, res) => {
   try {
     await transporter.sendMail(mailOptions);
     res.status(200).json({ message: 'Event request sent successfully.' });
-  } catch (err) {
-    console.error('Email error:', err);
-    res.status(500).json({ message: 'Failed to send email.' });
+  } catch (error) {
+    console.error('Email error:', error);
+    res.status(500).json({ message: 'Failed to send event request.' });
   }
 });
 

@@ -97,12 +97,14 @@
 // });
 
 
+
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { name, email, phone, location, message } = req.body;
+  const { name, email, phone, city, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -112,36 +114,12 @@ router.post('/', async (req, res) => {
     },
   });
 
-  // const mailOptions = {
-  //   from: `"${name} via Urban Kitchens" <${process.env.MAIL_USER}>`,
-  //   to: process.env.RECEIVER_EMAIL,
-  //   replyTo: email,
-  //   subject: '🏪 Franchise Request',
-  //   html: `
-  //     <div style="font-family: Arial;">
-  //       <h2>🏢 Franchise Inquiry</h2>
-  //       <p><strong>Name:</strong> ${name}</p>
-  //       <p><strong>Email:</strong> ${email}</p>
-  //       <p><strong>Phone:</strong> ${phone}</p>
-  //       <p><strong>Location:</strong> ${location}</p>
-  //       <p><strong>Message:</strong> ${message}</p>
-  //     </div>
-  //   `,
-  // };
-
-    const mailOptions = {
+   const mailOptions = {
     from: `"${name} via Franchise Form" <${process.env.MAIL_USER}>`,
     to: process.env.RECEIVER_EMAIL || process.env.MAIL_USER, // Your inbox
     replyTo: email, // So you can reply to user directly
     subject: '📩 New Franchise Request Submitted',
-    // html: `
-    //   <h2>New Franchise Request</h2>
-    //   <p><strong>Name:</strong> ${name}</p>
-    //   <p><strong>Email:</strong> ${email}</p>
-    //   <p><strong>Phone:</strong> ${phone}</p>
-    //   <p><strong>Message:</strong><br>${message || 'N/A'}</p>
-    //   <p><strong>Submitted At:</strong> ${new Date().toLocaleString()}</p>
-    // `,
+
 html: `
   <div style="max-width: 620px; margin: auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); overflow: hidden;">
     <div style="background-color: #4a90e2; padding: 20px 30px; color: white;">
@@ -185,9 +163,9 @@ html: `
   try {
     await transporter.sendMail(mailOptions);
     res.status(200).json({ message: 'Franchise request sent successfully.' });
-  } catch (err) {
-    console.error('Email error:', err);
-    res.status(500).json({ message: 'Failed to send email.' });
+  } catch (error) {
+    console.error('Email error:', error);
+    res.status(500).json({ message: 'Failed to send franchise request.' });
   }
 });
 
