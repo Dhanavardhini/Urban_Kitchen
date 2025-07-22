@@ -1,5 +1,5 @@
 import React from 'react'
-import Franchisedes from './FranchiseMain/Franchisedes'
+import Franchisedes from './franchisemain/Franchisedes'
 
 function FranchiseMain() {
   return (

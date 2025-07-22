@@ -1,10 +1,10 @@
 import React from 'react'
-import BrandHero from './Ourbrand/BrandHero'
-import JusBrand from './Ourbrand/JusBrand'
+import BrandHero from './ourbrand/BrandHero'
+import JusBrand from './ourbrand/JusBrand'
 // import Footer from '../common-pages/Footer';
-import HealthyBrand from './Ourbrand/HealthyBrand';
-import ProteinBrand from './Ourbrand/ProteinBrand';
-import BrandCarousel from './Ourbrand/BrandCarousel';
+import HealthyBrand from './ourbrand/HealthyBrand';
+import ProteinBrand from './ourbrand/ProteinBrand';
+import BrandCarousel from './ourbrand/BrandCarousel';
 
 function Ourbrand() {
   return (

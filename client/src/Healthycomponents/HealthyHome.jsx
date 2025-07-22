@@ -1,6 +1,6 @@
 import React from 'react';
 import '../HealthyStyles/Healthyd.css';
-import HealthyNavbar from '../Common-pages/HealthyNavbar';
+import HealthyNavbar from '../common-pages/HealthyNavbar';
 import HealthyHomePage from './HealthyHomePage';
 import HealthySection1 from './HealthySection1';
 import HealthySection2 from './HealthySection2';
@@ -8,7 +8,7 @@ import HealthySection3 from './HealthySection3';
 import HealthySection4 from './HealthySection4';
 import HealthySection5 from './HealthySection5';
 import HealthySection6 from './HealthySection6';
-import HealthyFooter from '../Common-pages/HealthyFooter';
+import HealthyFooter from '../common-pages/HealthyFooter';
 
 function HealthyHome() {
   return (

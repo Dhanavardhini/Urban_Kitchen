@@ -1,9 +1,9 @@
 import React from 'react'
-import OrderSection1 from './OrderMain/OrderSection1';
-import OrderSection2 from './OrderMain/OrderSection2';
-import Orderchoose from './OrderMain/Orderchoose';
-import Orders from './OrderMain/Orders';
-import Ordercarousel from './OrderMain/Ordercarousel';
+import OrderSection1 from './ordermain/OrderSection1';
+import OrderSection2 from './ordermain/OrderSection2';
+import Orderchoose from './ordermain/Orderchoose';
+import Orders from './ordermain/Orders';
+import Ordercarousel from './ordermain/Ordercarousel';
 
 function OrderMain() {
   return (

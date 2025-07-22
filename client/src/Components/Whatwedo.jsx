@@ -1,11 +1,11 @@
 import React from 'react';
-import Section1 from './Whatwedo/Section1';
-import Services from './Whatwedo/Services';
-import Counts from './Whatwedo/Counts';
-import Online from './Whatwedo/Online';
-import Testimonals from './Whatwedo/Testimonals';
+import Section1 from './whatwedo/Section1';
+import Services from './whatwedo/Services';
+import Counts from './whatwedo/Counts';
+import Online from './whatwedo/Online';
+import Testimonals from './whatwedo/Testimonals';
 // import Footer from '../common-pages/Footer';
-import CaroWhatwedo from './Whatwedo/CaroWhatwedo';
+import CaroWhatwedo from './whatwedo/CaroWhatwedo';
 
 function Whatwedo() {
   return (

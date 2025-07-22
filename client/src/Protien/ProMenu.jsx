@@ -1,7 +1,7 @@
 
 
 import React, { useState } from "react";
-import "../Protien/ProMenu.css";
+import "./ProMenu.css";
 
 // ✅ Import all images
 import pros1 from '../assets/px/Apple Sunset.png';

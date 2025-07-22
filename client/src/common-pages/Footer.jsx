@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../common-styles/Footer.css';
+import '../Common-styles/Footer.css';
 import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import hsd from '../assets/Healthy-Salad-and-Detox-copy.png';

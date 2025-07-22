@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import '../../../../Styles/WMForm.css';
-import FL from '../Form/FL';
-import Email from '../Form/Email';
-import Phone from '../Form/Phone';
-import SelectPlanDuration from '../Form/Selectplanduration';
+import FL from '../form/FL';
+import Email from '../form/Email';
+import Phone from '../form/Phone';
+import SelectPlanDuration from '../form/Selectplanduration';
 
 function WMForm() {
   const [formData, setFormData] = useState({
