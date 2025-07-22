@@ -1,0 +1,171 @@
+/* ✅ Main container */
+.pro-menu-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  max-height: 80vh; /* for popup scrolling */
+  overflow-y: auto;
+}
+
+/* ✅ Title */
+.pro-menu-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  color:#d32f2f;
+}
+
+/* ✅ Top bar with filters */
+.pro-menu-topbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.pro-category-buttons-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pro-category-buttons-left button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.pro-category-buttons-left button:hover {
+  border:2px solid #d32f2f;
+  color: #d32f2f;
+}
+
+/* ✅ Active (selected) button */
+.pro-active {
+  background-color: #d32f2f !important;
+  color: white !important;
+  border-color: transparent;
+}
+
+.pro-view-all-right {
+  display: flex;
+  align-items: center;
+}
+
+.pro-view-all {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.pro-view-all:hover {
+  background-color: #d32f2f;
+}
+
+/* ✅ Grid layout */
+.pro-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+/* ✅ Card */
+.pro-menu-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.pro-menu-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ Image container */
+.pro-image-container {
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pro-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+/* ✅ Special image fit */
+.pro-cover-top img {
+  object-fit: fill;
+}
+
+/* ✅ Card content */
+.pro-menu-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.pro-menu-content h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+/* ✅ Swiggy button */
+.pro-swiggy-button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #d32f2f;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pro-swiggy-button:hover {
+  border:2px solid #d32f2f;
+  color: #d32f2f;
+  background-color: white;
+}
+
+/* ✅ Responsive */
+@media screen and (max-width: 600px) {
+  .pro-menu-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .pro-image-container {
+    height: 210px;
+  }
+
+  .pro-image-container img {
+    object-fit: fill;
+  }
+
+  .pro-view-all-right {
+    align-self: flex-end;
+  }
+
+  .pro-menu-title {
+    font-size: 22px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,25 @@
+.corporate-section {
+  background-color: #bd976d;
+  padding: 3rem 1.5rem 1rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.corporate-text {
+  max-width: 800px;
+}
+
+.corporate-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color:white;
+  margin-bottom: 1rem;
+}
+
+.corporate-paragraph {
+  font-size: 1.1rem;
+  color:white;
+  line-height: 1.6;
+}

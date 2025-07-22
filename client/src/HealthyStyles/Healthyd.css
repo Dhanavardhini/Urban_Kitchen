@@ -1,0 +1,32 @@
+.healthy {
+  background-color: #e4f9e582;
+  position: relative;
+  /* min-height: 100vh; */
+  overflow-x: hidden;
+  /* z-index: 0; */
+}
+
+/* Add decorative side images only inside .healthy */
+.healthy::before,
+.healthy::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  width: 120px;
+  height: 100vh;
+  background-image: url('../assets/design.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.healthy::before {
+  left: 0;
+}
+
+.healthy::after {
+  right: 0;
+}

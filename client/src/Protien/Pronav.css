@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p-navbar-container {
+  background-color: black;
+  width: 200px;
+  height: 160px;
+}
+
+.p-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.p-dropdown-button {
+  background: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+}
+
+/* Dropdown content appears on hover */
+.p-dropdown:hover .p-dropdown-menu {
+  display: block;
+}
+
+.p-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.p-dropdown-item {
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.p-dropdown-item:hover {
+  background-color: #f2f2f2;
+  color: #d32f2f;
+}

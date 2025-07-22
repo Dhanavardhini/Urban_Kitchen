@@ -1,0 +1,124 @@
+:root {
+  --partypage-primary: white;
+  --partypage-hover: rgb(244, 127, 76);
+  --partypage-text: black;
+  --partypage-white: #bd976d;
+  --partypage-black: #000000;
+  --partypage-gap-md: 20px;
+  --partypage-gap-sm: 10px;
+  --partypage-radius: 10px;
+  --partypage-transition: 0.3s ease;
+}
+
+.partypage-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: var(--partypage-white);
+  color: var(--partypage-text);
+  gap: var(--partypage-gap-md);
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.partypage-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partypage-main-image {
+  width: 100%;
+  max-width: 650px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--partypage-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.partypage-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--partypage-gap-sm);
+  padding: 20px;
+}
+
+.partypage-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--partypage-primary);
+}
+
+.partypage-description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--partypage-primary);
+}
+
+.partypage-button {
+  background-color: var(--partypage-text);
+  color: var( --partypage-primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--partypage-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--partypage-transition);
+  width: fit-content;
+  align-self: center;
+}
+
+.partypage-button:hover {
+  background-color:  var( --partypage-primary);
+  color:var(--partypage-text);
+}
+
+/* Tablets and below */
+@media (max-width: 968px) {
+  .partypage-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .partypage-content {
+    padding: 15px 10px;
+    align-items: center;
+  }
+
+  .partypage-title {
+    font-size: 26px;
+  }
+
+  .partypage-description {
+    font-size: 15px;
+  }
+
+  .partypage-button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .partypage-title {
+    font-size: 22px;
+  }
+
+  .partypage-description {
+    font-size: 14px;
+  }
+
+  .partypage-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

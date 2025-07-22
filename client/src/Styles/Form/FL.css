@@ -1,0 +1,16 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}.fl-row {
+  display: flex;
+  gap: 20px;
+  /* margin-bottom: 20px; */
+}
+
+@media (max-width: 768px) {
+  .fl-row {
+    flex-direction: column;
+  }
+}

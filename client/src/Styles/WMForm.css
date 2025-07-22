@@ -1,0 +1,74 @@
+.WMForm-wrapper {
+  max-width: 600px;
+  margin: 20px auto 40px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.353);
+}
+
+.WMForm-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.WMForm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.WMForm-submit {
+  background-color: #5a63d8;
+  color: #fff;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.WMForm-submit:hover {
+  background-color: #434cc3;
+}
+@media (max-width: 688px) {
+ .WMForm-wrapper {
+  margin: 20px 30px 40px 30px;
+}
+}
+.WMForm-toast {
+  position: fixed;
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  color: white;
+  z-index: 9999;
+  animation: slideIn 0.4s ease-out;
+}
+
+.WMForm-toast.success {
+  background-color: #28a745;
+  top: 20px;
+  right: 20px;
+}
+
+.WMForm-toast.error {
+  background-color: #dc3545;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

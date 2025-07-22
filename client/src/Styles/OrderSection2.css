@@ -1,0 +1,72 @@
+:root {
+  --ordersection2-bg: #000;
+  --ordersection2-text: #fff;
+  --ordersection2-subtext: #ccc;
+  --ordersection2-highlight: #bd976d;
+  --ordersection2-font: 'Arial', sans-serif;
+  --ordersection2-gap: 20px;
+}
+
+.ordersection2-section {
+  background-color: var(--ordersection2-bg);
+  padding: 30px 20px;
+  color: var(--ordersection2-text);
+  font-family: var(--ordersection2-font);
+}
+
+.ordersection2-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: var(--ordersection2-gap);
+}
+
+.ordersection2-feature {
+  flex: 1 1 calc(25% - 20px);
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ordersection2-feature:last-child {
+  border-right: none;
+}
+
+.ordersection2-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: var(--ordersection2-highlight);
+}
+
+.ordersection2-feature h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ordersection2-feature p {
+  font-size: 0.95rem;
+  color: var(--ordersection2-subtext);
+}
+
+/* Responsive */
+@media (max-width: 942px) {
+  .ordersection2-feature {
+    flex: 1 1 50%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ordersection2-feature:nth-child(2n) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .ordersection2-feature {
+    flex: 1 1 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

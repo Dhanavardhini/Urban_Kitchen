@@ -1,0 +1,37 @@
+:root {
+  --party-bg: #bd976d;
+  --party-heading-color: white;
+  --party-text-color:white;
+  --party-font: 'Poppins', sans-serif;
+  --party-padding:  3rem 1.5rem 1rem 1.5rem;
+  --party-heading-size: 2rem;
+  --party-paragraph-size: 1.1rem;
+  --party-line-height: 1.6;
+  --party-max-width: 800px;
+}
+
+.party-section {
+  background-color: var(--party-bg);
+  padding: var(--party-padding);
+  font-family: var(--party-font);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.party-text {
+  max-width: var(--party-max-width);
+}
+
+.party-heading {
+  font-size: var(--party-heading-size);
+  color: var(--party-heading-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.party-paragraph {
+  font-size: var(--party-paragraph-size);
+  color: var(--party-text-color);
+  line-height: var(--party-line-height);
+}

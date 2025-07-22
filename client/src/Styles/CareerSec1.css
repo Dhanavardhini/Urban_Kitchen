@@ -1,0 +1,65 @@
+:root {
+  --careersec-max-width: 1200px;
+  --careersec-padding: 20px;
+  --careersec-font-family: 'Segoe UI', sans-serif;
+
+  --careersec-title-size: 32px;
+  --careersec-title-color:black;
+  --careersec-title-weight: 700;
+
+  --careersec-subtitle-size: 22px;
+  --careersec-subtitle-color:#bd976d;
+
+  --careersec-text-color: #121111;
+  --careersec-list-color:  #121111;
+
+  --careersec-description-size: 18px;
+  --careersec-list-size: 17px;
+  --careersec-line-height: 1.6;
+  --careersec-margin-bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.careersec-wrapper {
+  padding: 0 var(--careersec-padding) 10px var(--careersec-padding);
+  max-width: var(--careersec-max-width);
+  margin: auto;
+  font-family: var(--careersec-font-family);
+}
+
+.careersec-title {
+  font-size: var(--careersec-title-size);
+  font-weight: var(--careersec-title-weight);
+  color: var(--careersec-title-color);
+  margin-bottom: var(--careersec-margin-bottom);
+  text-align: left;
+}
+
+.careersec-description {
+  font-size: var(--careersec-description-size);
+  line-height: var(--careersec-line-height);
+  color: var(--careersec-text-color);
+  margin-bottom: 30px;
+}
+
+.careersec-subtitle {
+  font-size: var(--careersec-subtitle-size);
+  color: var(--careersec-subtitle-color);
+  margin-bottom: var(--careersec-margin-bottom);
+}
+
+.careersec-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: var(--careersec-list-size);
+  color: var(--careersec-list-color);
+}
+
+.careersec-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}

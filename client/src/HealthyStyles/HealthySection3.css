@@ -1,0 +1,118 @@
+.section3-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 250px 250px;
+}
+
+.grid-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 5px; */
+}
+
+.text-box {
+  flex-direction: column;
+  color: white;
+}
+
+.orange-bg {
+  background-color: #f26722;
+}
+
+.green-bg {
+  background-color: #17863c;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.text-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  max-width: 70%;         /* 🟢 limits paragraph width */
+  margin-left: auto;      /* 🟢 centers the paragraph */
+  margin-right: auto;
+  line-height: 1.5;       /* 🟢 better readability */
+}
+
+/* ✅ Animated Button (Slow Version) */
+.text-box button {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 24px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.7s ease;
+}
+
+.text-box button::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  z-index: -1;
+  transition: transform 0.9s ease;
+}
+
+.text-box button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.text-box button:hover {
+  color: #222;
+}
+
+/* ✅ Responsive for tablets and mobile */
+@media screen and (max-width: 768px) {
+  .section3-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .grid-box {
+    height: auto;
+    flex-direction: column;
+  }
+.text-box {
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+  .image-box img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  /* Swap order for Simple Menu image & text */
+  .section3-grid .grid-box:nth-child(3) {
+    order: 4;
+  }
+
+  .section3-grid .grid-box:nth-child(4) {
+    order: 3;
+  }
+}

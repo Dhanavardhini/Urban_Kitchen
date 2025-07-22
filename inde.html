@@ -1,0 +1,226 @@
+<!-- import React from 'react';
+import '../../../Styles/MealPlanDuration.css';
+
+const durations = [
+  'Weekly',
+  'Fortnightly',
+  'Monthly',
+  '3 Month - Quarterly',
+  '6 Month - Half Yearly',
+  'Annual Membership'
+];
+
+function MealPlanDuration() {
+  return (
+    <div className="planduration-section py-5 text-center">
+      <h2 className="planduration-title">Plan Duration</h2>
+      <p className="planduration-subtitle">Choose the duration that suits your lifestyle.</p>
+
+      <div className="container mt-4">
+        <div className="row justify-content-center">
+          {durations.map((item, index) => (
+            <div key={index} className="col-12 col-sm-6 col-md-4 mb-4 d-flex">
+              <div
+                className="planduration-card w-100"
+                style={{
+                //   background:
+                //     index % 3 === 0
+                //       ? 'linear-gradient(to bottom right, #00c6ff, #0072ff)'
+                //       : index % 3 === 1
+                //       ? 'linear-gradient(to bottom right, #ff758c, #ff7eb3)'
+                //       : 'linear-gradient(to bottom right, #43e97b, #38f9d7)'
+background:
+  index % 3 === 0
+    ? 'linear-gradient(to bottom right, #000000, #bd976d)' // Black to gold
+    : index % 3 === 1
+    ? 'linear-gradient(to bottom right, #ffffff, #bd976d)' // White to gold
+    : 'linear-gradient(to bottom right, #000000, #ffffff)' // Black to white
+
+
+                }}
+              >
+                <div className="planduration-icon">{index + 1}</div>
+                <h5 className="planduration-card-title">{item}</h5>
+                <p className="planduration-card-desc">
+                  All above plans can be availed on this duration.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default MealPlanDuration;
+.planduration-section {
+  background-color: #fefefe;
+  padding-bottom: 4rem;
+}
+
+.planduration-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.planduration-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.planduration-card {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  color: #fff;
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.062);
+
+}
+
+.planduration-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.171);
+}
+
+.planduration-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: white;
+  border-bottom-left-radius: 50% 40px;
+  border-bottom-right-radius: 50% 40px;
+}
+
+.planduration-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #bd976d;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.planduration-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.planduration-card-desc {
+  font-size: 0.95rem;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+card design -->
+
+   
+<style>
+    .sticky-buttons {
+        position: fixed;
+        bottom: 5%;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 999;
+        gap:5px;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    label.toggle-btn {
+        background-color: #232A37;
+        color: white;
+        padding: 6px 10px;
+        cursor: pointer;
+        font-size: 26px;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        transition: all 0.3s ease;
+    }
+ label.toggle-btn:hover {
+        background-color: white;
+        border: 2px solid #232A37;
+        color: #232A37;
+    }
+
+    .other-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        transition: all 0.3s ease;
+        gap:5px;
+
+    }
+
+    .other-buttons a .img-zomato {
+        width: 45px;
+        height: 40px;
+        border-radius: 4px 0 0 4px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    .other-buttons a .img-swiggy {
+        width: 36px;
+        height: 30px;
+        padding: 4px;
+        border-radius: 4px 0 0 4px;
+        border: 1px solid orange;
+        transition: all 0.3s ease;
+    }
+
+    #toggle:checked~.other-buttons {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .sticky-buttons {
+            top: auto;
+            bottom: 10%;
+        }
+    }
+</style>
+
+<div class="sticky-buttons">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle-btn">&larr;</label>
+
+    <div class="other-buttons">
+        <a href="https://www.swiggy.com/city/chennai/protein-xclusive-seethammal-extension-teynampet-rest847314" target="_blank">
+            <img class="img-swiggy" src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-logo.png" alt="Swiggy">
+        </a>
+
+        <a href="https://www.zomato.com/chennai/protein-xclusive-teynampet" target="_blank">
+            <img class="img-zomato" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="Zomato">
+        </a>
+    </div>
+</div>
+
+

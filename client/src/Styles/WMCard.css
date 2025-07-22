@@ -1,0 +1,149 @@
+
+
+:root {
+  --wm-bg: #fff;
+  --wm-text: #333;
+  --wm-subtext: #555;
+  --wm-accent: #6fb77d;
+  --wm-accent-hover: #58a965;
+  --wm-title-size: 28px;
+  --wm-heading-size: 32px;
+  --wm-subtitle-size: 18px;
+  --wm-card-shadow: 0 4px 14px rgba(0, 0, 0, 0.349);
+  --wm-card-hover-shadow: 0 8px 18px rgba(0, 0, 0, 0.623);
+  --wm-padding: 50px;
+  --wm-radius: 16px;
+  --wm-font: 'Poppins', sans-serif;
+}
+
+.WMCard-wrapper {
+  padding: 20px var(--wm-padding) 40px var(--wm-padding);
+  background-color: var(--wm-bg);
+  font-family: var(--wm-font);
+}
+
+.WMCard-wrapper h2 {
+  text-align: center;
+  font-size: var(--wm-title-size);
+  color: var(--wm-text);
+  font-weight: bold;
+}
+
+.WMCard-title {
+  text-align: center;
+  font-size: var(--wm-title-size);
+  color: var(--wm-text);
+  margin: 30px 0 50px;
+  font-weight: bold;
+}
+
+/* Default: ≥1026px → 4 cards */
+.WMCard-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 0 0px;
+}
+
+.WMCard-horizontal-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--wm-bg);
+  box-shadow: var(--wm-card-shadow);
+  overflow: hidden;
+  border-radius:15px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.WMCard-horizontal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--wm-card-hover-shadow);
+}
+
+.WMCard-horizontal-img {
+  width: 100%;
+  height: 130px;
+  object-fit:fill;
+  flex-shrink: 0;
+}
+
+.WMCard-horizontal-content {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.WMCard-horizontal-content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--wm-text);
+}
+
+.WMCard-horizontal-content p {
+  font-size: 12px;
+  color: var(--wm-subtext);
+  margin-bottom: 12px;
+}
+
+.WMCard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.WMCard-order-btn {
+  background-color: var(--wm-accent);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.WMCard-order-btn:hover {
+  background-color: var(--wm-accent-hover);
+}
+
+.WMCard-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--wm-accent);
+}
+
+/* <1026px → 3 cards */
+@media (max-width: 1225px) {
+  .WMCard-list {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 30px;
+    gap: 30px;
+  }
+}
+@media (max-width: 888px) {
+  .WMCard-list {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30px;
+    gap: 30px;
+  }
+}
+/* <530px → 2 cards */
+@media (max-width: 529px) {
+  .WMCard-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0px;
+    gap: 30px;
+  }
+  .WMCard-wrapper {
+  padding: 20px;
+  background-color: var(--wm-bg);
+  font-family: var(--wm-font);
+}
+}

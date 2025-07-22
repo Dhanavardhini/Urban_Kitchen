@@ -1,0 +1,396 @@
+:root {
+  --primary-green: #17863c;
+  --hover-bg: #f2f8f5;
+  --white: #fff;
+  --dark-text: #333;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top Banner */
+.top-banner-nav {
+  background: linear-gradient(to right, #e0f9ed, #f6fff9);
+  color: var(--primary-green);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #d0eddc;
+}
+
+/* Middle Header */
+.middle-header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--white);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-flex-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-img-nav {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-title-nav {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-green);
+}
+
+.logo-subtext-nav {
+  font-size: 14px;
+  color: #888;
+}
+
+.white {
+  color: white;
+}
+
+/* Social Icons */
+.icons-nav {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.icons-nav a {
+  font-size: 27px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.icons-nav a.insta { color: #E1306C; }
+.icons-nav a.facebook { color: #1877F2; }
+.icons-nav a.whatsapp { color: #25D366; }
+
+.icons-nav a:hover {
+  transform: scale(1.2);
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon-nav {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--dark-text);
+  z-index: 1100;
+}
+
+/* Navigation Menu */
+.nav-menu-nav {
+  background-color: var(--primary-green);
+  transition: all 0.3s ease;
+}
+
+.nav-menu-nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 12px 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: var(--hover-bg);
+  color: var(--primary-green);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Sticky Nav */
+.nav-menu-nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-green);
+  z-index: 999;
+  animation: slideDown 0.4s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Sticky Layout */
+.sticky-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+}
+
+/* ===== New Scroll Layout for Desktop ===== */
+@media (min-width: 1224px) {
+  .sticky-desktop-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+  .sticky-left-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sticky-right-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .sticky-right-links .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+/* Sticky Logo Shared */
+.sticky-logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.sticky-text {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.logo-title-nav.white,
+.logo-subtext-nav.white {
+  color: white;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* ===== Dropdown Menu Styles ===== */
+.dropdown-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.view-menu-toggle {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.view-menu-toggle:hover {
+  background-color: #11662d;
+  border-radius: 6px;
+}
+
+.dropdown-content-nav {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-green);
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dropdown-content-nav li,
+.dropdown-content-nav a {
+  display: block;
+  padding: 12px 10px;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-content-nav li:hover,
+.dropdown-content-nav a:hover {
+  background-color: #11662d;
+  color: white;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1223px) {
+  .middle-header-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-green);
+    padding: 12px 20px;
+  }
+
+  .logo-flex-nav {
+    justify-content: flex-start;
+    width: auto;
+    text-align: left;
+  }
+
+  .logo-title-nav,
+  .logo-subtext-nav {
+    color: white;
+  }
+
+  .logo-img-nav {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icons-nav {
+    display: none;
+  }
+
+  .mobile-menu-icon-nav {
+    display: block;
+    font-size: 26px;
+    color: white;
+    position: static;
+    transform: none;
+  }
+
+  .nav-menu-nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu-nav.open ul.nav-links {
+    display: flex;
+  }
+
+  .sticky-layout ul.nav-links {
+    display: none;
+  }
+
+  .nav-menu-nav.open .sticky-layout ul.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sticky-logo-title {
+    display: none !important;
+  }
+
+  .sticky-logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .sticky-logo-wrapper .logo-flex-nav {
+    justify-content: flex-start;
+    width: auto;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .sticky-logo-wrapper .logo-img-nav {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sticky-logo-wrapper .logo-title-nav.white {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .sticky-logo-wrapper .logo-subtext-nav.white {
+    font-size: 13px;
+    color: #e6e6e6;
+  }
+
+  .sticky-logo-wrapper .mobile-menu-icon-nav {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-menu-nav.open .sticky-logo-wrapper .logo-flex-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .dropdown-content-nav {
+    position: static;
+    width: 100%;
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 10px;
+  }
+
+  .dropdown-content-nav li,
+  .dropdown-content-nav a {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .view-menu-toggle {
+    padding: 12px;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.top-align-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1100;
+}

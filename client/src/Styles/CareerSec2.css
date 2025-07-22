@@ -1,0 +1,107 @@
+:root {
+  --career-color-primary: black;
+  --career-color-secondary:  #bd976d;
+  --career-color-text: #111;
+  --career-color-muted: #333;
+  --career-color-bg-light: #f8f9fa;
+  --career-border-light: #e2e2e2;
+
+  --career-font-main: 'Segoe UI', sans-serif;
+
+  --career-font-size-title: 28px;
+  --career-font-size-subtitle: 20px;
+  --career-font-size-body: 16px;
+  --career-font-size-highlight: 24px;
+
+  --career-radius: 10px;
+  --career-padding: 40px;
+  --career-gap: 10px;
+}
+
+.career-sec2 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px var(--career-padding);
+  font-family: var(--career-font-main);
+  color: var(--career-color-text);
+}
+
+.career-sec2-title {
+  font-size: var(--career-font-size-title);
+  font-weight: 700;
+  color: var(--career-color-primary);
+  margin-bottom: var(--career-gap);
+}
+
+.career-sec2-subtitle {
+  font-size: var(--career-font-size-subtitle);
+  color: var(--career-color-secondary);
+  margin-bottom: 20px;
+}
+
+.career-sec2-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: var(--career-font-size-body);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.career-sec2-talk {
+  font-size: var(--career-font-size-highlight);
+  font-weight: 600;
+  color: var(--career-color-primary);
+  margin-bottom: 30px;
+}
+
+.career-sec2-card {
+  background: var(--career-color-bg-light);
+  padding: 20px;
+  border-radius: var(--career-radius);
+  border: 1px solid var(--career-border-light);
+  margin-bottom: 40px;
+  font-size: var(--career-font-size-body);
+}
+
+.career-sec2-card a {
+  color: var(--career-color-secondary);
+  text-decoration: underline;
+}
+
+.career-sec2-apply {
+  font-size: var(--career-font-size-body);
+  line-height: 1.6;
+}
+
+.career-sec2-apply a {
+  color: var(--career-color-primary);
+  font-weight: 600;
+}
+
+/* 📧 Mail icon style */
+.mail-icon {
+  vertical-align: middle;
+  margin-right: 6px;
+  font-size: 18px;
+  color: var(--career-color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .career-sec2-title {
+    font-size: 24px;
+  }
+
+  .career-sec2-talk {
+    font-size: 20px;
+  }
+
+  .career-sec2-subtitle {
+    font-size: 18px;
+  }
+
+  .career-sec2-card,
+  .career-sec2-apply {
+    font-size: 15px;
+  }
+}

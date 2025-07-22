@@ -1,0 +1,124 @@
+:root {
+  --franchisedes-primary:black;
+  --franchisedes-accent: #bd976d;
+  --franchisedes-bg: #f9f9f9;
+  --franchisedes-text: #1f1f1f;
+  --franchisedes-radius: 10px;
+}
+
+.franchisedes-section {
+  color: var(--franchisedes-text);
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: var(--franchisedes-radius);
+}
+
+.franchisedes-title {
+  font-size: 32px;
+  color: var(--franchisedes-primary);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.franchisedes-description,
+.franchisedes-conclusion {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+.franchisedes-subtitle {
+  font-size: 22px;
+  color: var(--franchisedes-accent);
+  margin-bottom: 10px;
+  text-align:Left;
+}
+
+.franchisedes-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.franchisedes-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.franchisedes-list li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+}
+
+.franchisedes-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.franchisedes-cta-btn {
+  background-color: var(--franchisedes-primary);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--franchisedes-radius);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.franchisedes-cta-btn:hover {
+  background-color: white;
+  color:var(--franchisedes-primary) ;
+  border:2px solid black;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .franchisedes-title {
+    font-size: 26px;
+  }
+
+  .franchisedes-subtitle {
+    font-size: 20px;
+  }
+
+  .franchisedes-description,
+  .franchisedes-conclusion {
+    font-size: 15px;
+  }
+
+  .franchisedes-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .franchisedes-section {
+    padding: 30px 15px;
+  }
+
+  .franchisedes-title {
+    font-size: 22px;
+  }
+
+  .franchisedes-subtitle {
+    font-size: 18px;
+  }
+
+  .franchisedes-description,
+  .franchisedes-conclusion {
+    font-size: 14px;
+  }
+
+  .franchisedes-list li {
+    font-size: 13.5px;
+  }
+}

@@ -1,0 +1,200 @@
+:root {
+  --jus-primary: #d32f2f;
+  --jus-bg: #fff;
+  --jus-text: #333;
+  --jus-button-bg: #d32f2f;
+  --jus-button-color: #fff;
+  --jus-radius: 10px;
+  --jus-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --jus-gap: 2rem;
+}
+
+.jus-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--jus-gap);
+  padding: 20px 2rem;
+  background-color: var(--jus-bg);
+}
+
+.jus-left {
+  order: 2;
+  flex: 1 1 400px;
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.jus-right {
+  /* order: 1;
+  flex: 1 1 600px;
+  max-width: 660px;
+  text-align: center;
+   margin: 0;
+  padding: 0; */
+   order: 2;
+  flex: 1 1 400px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* background-color: #d12d43; */
+}
+
+.jus-main-image {
+  /* width: 100%;
+  height: 500px; */
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: var(--jus-radius);
+  box-shadow: var(--jus-shadow);
+  display: block;
+  margin: 0 auto;
+}
+
+.jus-title {
+  font-size: 2.5rem;
+  color: var(--jus-primary);
+  margin: 0.5rem 0;
+}
+
+.jus-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.jus-description {
+  font-size: 1.1rem;
+  color: var(--jus-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.jus-button {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--jus-button-bg);
+  color: var(--jus-button-color);
+  border: none;
+  border-radius: var(--jus-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--jus-shadow);
+  transition: transform 0.3s ease;
+  text-decoration: none; /* 🔥 Removes underline */
+}
+
+.jus-button:hover {
+  transform: translateY(-3px);
+  text-decoration: none; /* 🔥 Also on hover */
+}
+
+
+/* .jus-button {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--jus-button-bg);
+  color: var(--jus-button-color);
+  border: none;
+  border-radius: var(--jus-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--jus-shadow);
+  transition: transform 0.3s ease;
+}
+
+.jus-button:hover {
+  transform: translateY(-3px);
+} */
+
+/* Responsive below lg (image first) */
+/* @media (max-width: 930px) {
+  .jus-brand {
+    flex-direction: column;
+    padding: 10px 1rem;
+  }
+
+  .jus-left {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .jus-right {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .jus-main-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+
+  .jus-logo {
+    width: 90px;
+  }
+
+  .jus-title {
+    font-size: 2rem;
+  }
+
+  .jus-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+} */
+
+
+@media (max-width: 1202px) {
+  .jus-brand {
+    flex-direction: column;
+    /* padding: 0;
+    margin: 0; */
+        padding: 1rem 1rem;
+  }
+
+  .jus-right{
+      order: 1;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 190px;
+    /* background-color: #17863c; */
+  }
+  .jus-left {
+    order: 2;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .jus-main-image {
+    margin-bottom: 0.5rem;
+  }
+
+  .jus-title {
+     font-size: 2rem;
+    margin-top: 0.5rem;   /* Tight spacing */
+  }
+
+  .jus-logo {
+    width: 80px;
+    margin: 0.2rem 0 0.6rem;    /* Reduced space below logo */
+  }
+
+  .jus-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+    /* margin: 0 0 1rem 0;         Minimal space below paragraph */
+  }
+
+  .jus-button {
+    margin: 0 auto 1rem auto;   /* Only enough space below */
+  }
+}

@@ -1,0 +1,53 @@
+.nutrition-container {
+  padding: 50px 30px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.nutrition-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.nutrition-description {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.nutrition-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.nutrition-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.nutrition-box:hover {
+  transform: translateY(-6px);
+}
+
+.nutrition-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.nutrition-box p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+}

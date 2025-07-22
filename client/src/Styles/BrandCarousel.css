@@ -1,0 +1,356 @@
+/* Carousel container */
+.brand-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Carousel item */
+.brand-carousel-item {
+  height: 90vh;
+  position: relative;
+}
+
+/* Image styles */
+.brand-carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Base caption styling */
+.brand-carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Typography */
+.brand-carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.brand-carousel-caption p {
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* Button */
+.brand-carousel-caption button {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.877) !important;
+  border: 1px solid rgba(0, 0, 0, 0.808) !important;
+  padding: 10px 22px;
+  font-weight: bold;
+  font-size: 12px !important;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.brand-carousel-caption button:hover {
+  /* Optional hover style */
+}
+
+/* MOBILE (phones) */
+@media (max-width: 768px) {
+  .brand-carousel-caption {
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    transform: none;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .brand-carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .brand-carousel-item {
+    height: 70vh;
+  }
+
+  .brand-carousel-caption button {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
+}
+
+/* Small screen override */
+@media (max-width: 765px) {
+  .brand-carousel-item {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .brand-carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    background-color: rgb(3, 3, 45);
+  }
+
+  .brand-carousel-caption {
+    bottom: 4%;
+    left: 5%;
+    right: 5%;
+    transform: none;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .brand-carousel-caption h5 {
+    font-size: 1.4rem;
+  }
+
+  .brand-carousel-caption p {
+    font-size: 0.95rem;
+  }
+
+  .brand-carousel-caption button {
+    font-size: 10px !important;
+    padding: 5px 10px;
+    margin-top: 1rem;
+  }
+
+  .caption-left {
+    left: 5% !important;
+    text-align: left;
+    bottom: 4% !important;
+    top: 64%;
+  }
+
+  .caption-right {
+    left: auto !important;
+    right: 5% !important;
+    text-align: right;
+    bottom: 4% !important;
+    top: 54%;
+  }
+
+  .caption-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 4% !important;
+    top: 54%;
+  }
+}
+
+/* Desktop positions (lg and up) */
+@media (min-width: 1025px) {
+  .brand-carousel-caption {
+    width: 450px;
+    padding: 1.5rem;
+  }
+
+  .caption-left {
+    left: 10% !important;
+    transform: none;
+    text-align: left;
+    bottom: 16% !important;
+  }
+
+  .caption-right {
+    /* left: 60% !important;
+    right: 1% !important;
+    transform: none;
+    text-align: right;
+    bottom: 27% !important; */
+    left: 40% !important;
+    right: 14% !important;
+    text-align: right;
+    bottom: 1% !important;
+    /* width: 40px; */
+    top: 79%;
+  }
+
+  .caption-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 22% !important;
+  }
+}
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+  .brand-carousel-caption {
+    bottom: 10% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 90%;
+    text-align: center !important;
+    padding: 1rem;
+  }
+
+  .brand-carousel-caption {
+    width: 450px;
+    padding: 1.5rem;
+  }
+
+  .caption-left {
+    left: 25% !important;
+    transform: none;
+    text-align: left;
+    bottom: 16% !important;
+  }
+
+  .caption-right {
+    /* left: 80% !important;
+    right: auto !important;
+    transform: none;
+    text-align: right;
+    bottom: 27% !important; */
+    left: 50% !important;
+    right: 4% !important;
+    text-align: right;
+    bottom: 1% !important;
+    /* width: 40px; */
+    top: 74%;
+  }
+
+  .caption-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 22% !important;
+  }
+}
+
+@media (max-width: 505px) {
+  .brand-carousel-item {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .brand-carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    background-color: rgb(3, 3, 45);
+  }
+
+  .brand-carousel-caption {
+    bottom: 4%;
+    left: 5%;
+    right: 5%;
+    transform: none;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .brand-carousel-caption button {
+    font-size: 10px !important;
+    padding: 5px 10px;
+    margin-top: 1rem;
+  }
+
+  .caption-left {
+    left: 25% !important;
+    text-align: left;
+    bottom: 4% !important;
+    top: 54%;
+  }
+
+  /* .caption-right { */
+    /* left: 83% !important;
+    right: auto !important;
+    text-align: right;
+    bottom: 4% !important;
+    top: 48%; */
+      .caption-right {
+    left: 50% !important;
+    right: 4% !important;
+    text-align: right;
+    bottom: 1% !important;
+    /* width: 40px; */
+    top: 64%;
+  }
+  /* } */
+
+  .caption-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 4% !important;
+    top: 54%;
+  }
+}
+/* @media (max-width: 380px) { */
+@media (max-width: 400px) {
+
+  .brand-carousel-item {
+    height: auto;
+    min-height: 210px;
+    /* background-color: red; Or set based on your image proportions */
+  }
+
+  .brand-carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* ✅ Ensures full image is shown */
+    object-position: center;
+    background-color: #000; /* Optional for better contrast */
+  }
+
+  .brand-carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    /* padding: 0.75rem; */
+    text-align: center;
+  }
+
+  .brand-carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .brand-carousel-caption button {
+    font-size: 8px !important;
+    padding: 3px 9px;
+  }
+  .caption-left {
+    left: 25% !important;
+    text-align: left;
+    bottom: 4% !important;
+    top: 52%;
+  }
+
+  .caption-right {
+    left: 50% !important;
+    right: 50% !important;
+    text-align: right;
+    bottom: 1% !important;
+    top: 61%;
+  }
+
+  .caption-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 4% !important;
+    top: 44%;
+  }
+}

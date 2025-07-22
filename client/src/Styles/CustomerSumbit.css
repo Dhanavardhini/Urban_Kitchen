@@ -1,0 +1,129 @@
+/* 
+
+
+.submit-page {
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.submit-page h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.choice-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choice-card img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.meal-category {
+  font-size: 18px !important;
+  color: #444;
+  margin-top: 6px;
+}
+@media (max-width: 1003px) {
+  .custom-responsive {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 530px) {
+  .custom-responsive {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+} */
+
+
+.submit-page {
+  overflow-y: auto;
+  padding: 30px 20px 40px 20px;
+  background-color: #fff;
+}
+
+.submit-page h2 {
+  font-size: 25px !important;
+  font-weight: bold;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr); /* Default: 5 cards per row */
+}
+
+.choice-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choice-card img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-body h5 {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+.meal-category {
+  font-size: 15px !important;
+  color: #444;
+  margin-top: 6px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1025px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 cards */
+  }
+}
+
+@media (max-width: 899px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards */
+  }
+}
+
+@media (max-width: 550px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards */
+  }
+}

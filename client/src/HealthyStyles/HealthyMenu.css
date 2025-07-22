@@ -1,0 +1,161 @@
+
+
+.menu-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  max-height: 80vh; /* for popup scrolling */
+  overflow-y: auto;
+}
+
+/* ✅ Title */
+.menu-title {
+  text-align: center;
+  font-size: 33px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  color: #17863c;
+}
+
+/* ✅ Filter buttons topbar */
+.menu-topbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.category-buttons-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-buttons-left button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.category-buttons-left button:hover {
+  color: #17863c;
+  background-color: white;
+  border: 2px solid #17863c;
+}
+
+.category-buttons-left .active {
+  background-color: #17863c;
+  color: white;
+  border-color: transparent;
+}
+
+.view-all-right {
+  display: flex;
+  align-items: center;
+}
+
+.view-all {
+  background-color: #17863c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ✅ Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+/* ✅ Menu Card */
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ Image section – uniform across all devices */
+.image-container {
+  height: 300px; /* same height everywhere */
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ Card content */
+.menu-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-content h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+/* ✅ Swiggy Button */
+.swiggy-button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #17863c;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.swiggy-button:hover {
+color: #17863c;
+border: 2px solid #17863c;
+background-color: white;
+}
+
+/* ✅ Responsive – keep everything same, no image height change */
+@media screen and (max-width: 600px) {
+  .menu-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .view-all-right {
+    align-self: flex-end;
+  }
+
+  .menu-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* Removed height override for image-container */
+}
+/* ✅ Special Image Style for Almond Milk + Detox */
+.cover-top img {
+  object-fit: contain;
+  object-position: top;
+}

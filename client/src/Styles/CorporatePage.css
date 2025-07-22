@@ -1,0 +1,125 @@
+:root {
+  --corporatepage-primary:white;
+  --corporatepage-primary-1:black;
+  --corporatepage-hover: #bd976d;
+  --corporatepage-text: #1f1717;
+  --corporatepage-white: #bd976d;
+  --corporatepage-black: #000000;
+  --corporatepage-gap-md: 20px;
+  --corporatepage-gap-sm: 10px;
+  --corporatepage-radius: 10px;
+  --corporatepage-transition: 0.3s ease;
+}
+
+.corporatepage-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: var(--corporatepage-white);
+  color: var(--corporatepage-text);
+  gap: var(--corporatepage-gap-md);
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.corporatepage-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corporatepage-main-image {
+  width: 100%;
+  max-width: 650px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--corporatepage-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.corporatepage-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--corporatepage-gap-sm);
+  padding: 20px;
+}
+
+.corporatepage-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--corporatepage-primary);
+}
+
+.corporatepage-description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--corporatepage-primary);
+}
+
+.corporatepage-button {
+  background-color: var(--corporatepage-primary-1);
+color: var(--corporatepage-primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--corporatepage-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--corporatepage-transition);
+  width: fit-content;
+  align-self: center;
+}
+
+.corporatepage-button:hover {
+  background-color: var(--corporatepage-primary);
+  color: var(--corporatepage-primary-1) ;
+}
+
+/* Responsive: Tablets and below */
+@media (max-width: 968px) {
+  .corporatepage-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .corporatepage-content {
+    padding: 15px 10px;
+    align-items: center;
+  }
+
+  .corporatepage-title {
+    font-size: 26px;
+  }
+
+  .corporatepage-description {
+    font-size: 15px;
+  }
+
+  .corporatepage-button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive: Small Mobile */
+@media (max-width: 480px) {
+  .corporatepage-title {
+    font-size: 22px;
+  }
+
+  .corporatepage-description {
+    font-size: 14px;
+  }
+
+  .corporatepage-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

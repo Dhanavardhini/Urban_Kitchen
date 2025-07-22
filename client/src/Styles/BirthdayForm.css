@@ -1,0 +1,146 @@
+:root {
+  --form-bg: #bd976d;
+  --form-border: #ddd;
+  --form-radius: 10px;
+  --form-padding: 1.5rem;
+  --form-color: #333;
+  --form-accent: #bd976d;
+  --form-font: 'Poppins', sans-serif;
+}
+
+.custom-form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: var(--form-bg);
+  font-family: var(--form-font);
+}
+
+.custom-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.233);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--form-color);
+}
+
+.custom-form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: var(--form-color);
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--form-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: inherit;
+  box-sizing: border-box;
+  /* outline: none; */
+}
+
+.custom-form input:focus,
+.custom-form textarea:focus,
+.custom-form select:focus {
+  border-color: #bd976d;
+  outline: none;
+}
+
+.custom-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.custom-form button {
+  background-color: var(--form-accent);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form button:hover {
+  background-color: white;
+  border: 2px solid #bd976d;
+  color: #bd976d;
+}
+
+/* ✅ Success and Error Messages at Bottom */
+.message-box {
+  position: absolute;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  z-index: 20;
+  max-width: 80%;
+  animation: fadeIn 0.4s ease;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 4px solid #28a745;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.message-box.error {
+  background-color: #fdecea;
+  color: #c62828;
+  border-left: 4px solid #c62828;
+  bottom: 10px;
+  left: 10px;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Responsive Tweaks */
+@media (max-width: 480px) {
+  .custom-form {
+    padding: 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .message-box {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    max-width: 95%;
+  }
+}

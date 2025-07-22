@@ -1,0 +1,89 @@
+/* .caro-whatwedo-container {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.caro-whatwedo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 768px) {
+  .caro-whatwedo-container {
+    height: 60vh; smaller height for mobile if needed
+  }
+} */
+
+.caro-whatwedo-container {
+  width: 100vw;
+  height: 80vh;
+  min-height: 300px; /* 🔁 Optional: to avoid collapse on small screens */
+  overflow: hidden;
+  position: relative;
+}
+
+.caro-whatwedo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 🧠 Make sure the image covers fully */
+  object-position: center;    /* ✅ Center it nicely */
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .caro-whatwedo-container {
+    height: 65vh; /* 🔁 adjust height for tablets */
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .caro-whatwedo-container {
+    height: 60vh; /* 🔁 smaller for mobile */
+  }
+    .caro-whatwedo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+    display: block;
+  
+    border-radius: 10px;
+
+  }
+}
+
+
+@media (max-width: 575px) {
+  .caro-whatwedo-container {
+    height: 50vh; /* or adjust to 55vh if you want it a bit larger */
+  }
+
+  .caro-whatwedo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+@media (max-width: 565px) {
+  .caro-whatwedo-container {
+    height: 30vh;
+    width: 100vw;               /* ✅ Full viewport width */
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* background-color: red; */
+  }
+
+  .caro-whatwedo-img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    /* object-position: center; */
+    display: block;
+  }
+}

@@ -1,0 +1,218 @@
+:root {
+  --font-script: 'Dancing Script', cursive;
+  --main: #bd976d;
+  --title: #111;
+  --desc: #444;
+  --bg: #fff;
+  --highlight: #bd976d;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.452);
+  --radius: 1rem;
+  --dot: #bbb;
+  --dot-active: #bd976d;
+  --gap: 1rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.text-wrapper,
+.card,
+.image {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.sub {
+  font-family: var(--font-script);
+  color: var(--main);
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+  font-weight:bold;
+
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--title);
+  margin: 0;
+  line-height: 1.2;
+  padding-bottom: 0.2rem;
+}
+
+.card {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto;
+  border: none;
+}
+
+.quote {
+  font-size: 1rem;
+  color: var(--desc);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  border: none;
+}
+
+.info h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.info p {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+.rating {
+  margin-left: auto;
+  color: var(--highlight);
+  font-size: 1.1rem;
+}
+
+.image {
+  position: relative;
+  text-align: center;
+}
+
+.salad {
+  width: 100%;
+  max-width: 530px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.dots {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  background: var(--dot);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--dot-active);
+}
+
+/* ✅ Large screens (1323px and above) */
+@media (min-width: 1323px) {
+  .testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "text-wrapper image"
+      "card image";
+    align-items: start;
+    row-gap: 0; /* ❌ No vertical gap */
+    column-gap: var(--gap);
+    padding: 1rem 4rem;
+  }
+
+  .text-wrapper {
+    grid-area: text-wrapper;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title {
+    margin: 20px 0 0 0;
+    padding: 0 0 0.2rem 0;
+    line-height: 1.2;
+  }
+
+  .card {
+    grid-area: card;
+    text-align: left;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+
+  .image {
+    grid-area: image;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1322px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    gap: var(--gap);
+  }
+
+  .card {
+    padding: 1.8rem;
+  }
+
+  .dots {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  .title { font-size: 1.5rem; }
+  .sub { font-size: 1.2rem; }
+  .card { padding: 1.5rem; }
+  .quote { font-size: 0.95rem; }
+  .avatar { width: 45px; height: 45px; }
+  .rating { font-size: 1rem; }
+  .salad { max-width: 260px; }
+  .dot { width: 18px; height: 18px; font-size: 10px; line-height: 18px; }
+}

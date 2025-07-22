@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+  --red-color: #d32f2f;
+  --yellow-color: #cc5200;
+  --white-color: #fff;
+  --text-color: #000;
+  --font-family-primary: "Merriweather", serif;
+  --font-weight-bold: bold;
+}
+
+/* ============ Navbar ============ */
+.jus-navbar-appbar {
+  background-color: var(--white-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1300;
+}
+
+.jus-navbar-toolbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 20px !important;
+  font-family: var(--font-family-primary);
+  flex-wrap: nowrap;
+}
+
+/* ============ Logo Section ============ */
+.jus-left-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 20px;
+  flex-shrink: 0;
+}
+
+.jus-logo-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jus-logo-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.jus-logo-text {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 1.7rem !important;
+  font-weight: var(--font-weight-bold) !important;
+  color: var(--red-color);
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
+}
+
+.jus-logo-subtext {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 0.95rem !important;
+  color: var(--red-color);
+  line-height: 1.1;
+}
+
+/* ============ Nav Items ============ */
+.jus-right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border-radius: 70px 0 0 0;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.jus-nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.jus-nav-button-home,
+.jus-nav-button-other,
+.jus-nav-button-active {
+  font-family: var(--font-family-primary) !important;
+  font-weight: var(--font-weight-bold) !important;
+  font-size: 1.2rem;
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+  text-transform: none;
+  transition: all 0.3s ease;
+}
+
+.jus-nav-button-home:hover,
+.jus-nav-button-other:hover,
+.jus-delivery-text:hover {
+  color: var(--red-color) !important;
+}
+
+.jus-nav-button-active {
+  color: var(--red-color) !important;
+}
+
+/* ============ Drawer Items ============ */
+.jus-drawer-home,
+.jus-drawer-other,
+.jus-drawer-active {
+  font-family: var(--font-family-primary);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color);
+}
+
+.jus-drawer-active {
+  color: var(--red-color);
+}
+
+/* ============ Delivery Box ============ */
+.jus-delivery-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.jus-delivery-logo {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.jus-delivery-text {
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-bold) !important;
+  color: var(--red-color);
+}
+
+.jus-phone-number {
+  font-weight: var(--font-weight-bold) !important;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* ============ Mobile Menu Icon ============ */
+.jus-menu-icon {
+  display: none !important;
+  color: var(--text-color) !important;
+  font-size: 45px !important;
+}
+
+/* ============ View Menu Dropdown ============ */
+.jus-dropdown-wrapper {
+  position: relative;
+}
+
+.jus-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 2000;
+}
+
+/* .jus-dropdown-item {
+  padding: 10px 16px;
+  text-align: left;
+  text-decoration: none;
+  background: white;
+  color: var(--text-color) !important;
+  border-bottom: 1px solid #eee;
+  font-weight:550 !important;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+} */
+.jus-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  background: white;
+  color: var(--text-color);
+  border-bottom: 1px solid #eee;
+  font-family: "Merriweather", serif !important; /* ✅ Same font for both */
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.jus-dropdown-item-v{
+  color: #000 !important;
+
+}
+.jus-dropdown-item-v:hover {
+  background-color: #f8f8f8;
+  color: var(--red-color) !important;
+}
+.jus-dropdown-item:hover {
+  background-color: #f8f8f8;
+  color: var(--red-color);
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 1199px) {
+  .jus-menu-icon {
+    display: block !important;
+    font-size: 40px !important;
+    margin-right: 30px !important;
+  }
+
+  .jus-nav-links,
+  .jus-delivery-box {
+    display: none !important;
+  }
+
+  .jus-right-side {
+    background-color: transparent !important;
+    padding: 0 !important;
+    justify-content: flex-end;
+  }
+
+  .jus-left-side {
+    gap: 10px;
+  }
+
+  .jus-logo-text,
+  .jus-logo-subtext {
+    font-family: var(--font-family-primary) !important;
+  }
+}

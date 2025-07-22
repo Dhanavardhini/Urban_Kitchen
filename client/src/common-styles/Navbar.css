@@ -1,0 +1,443 @@
+/* ------------------ Root Variables ------------------ */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary-blue: #001A6E;
+  --hover-orange: #bd976d;
+  --text-dark: rgb(31, 23, 23);
+  --email-red: #d93025;
+  --instagram: #E1306C;
+  --facebook: #1877F2;
+  --whatsapp: #25D366;
+  --transition-fast: 0.3s ease;
+  --gap-md: 20px;
+  --gap-sm: 8px;
+  --radius-pill: 30px;
+  --radius-sm: 5px;
+  --z-navbar: 999;
+  --z-menu: 998;
+  --nav-top-height: 113px;
+  --nav-scroll-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+
+/* ---------------- Top Contact Bar ---------------- */
+.uk-nav-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.uk-nav-hide-top {
+  display: none;
+}
+
+.uk-nav-contact-info,
+.uk-nav-address-social {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+}
+
+.uk-nav-contact-info a {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  transition: var(--transition-fast);
+}
+
+.uk-nav-contact-info a:hover {
+  color: rgb(2, 2, 130);
+}
+
+.uk-nav-social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* ---------------- Main Navbar ---------------- */
+.uk-nav-main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  padding: 0px 20px !important;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: var(--z-navbar);
+}
+
+.uk-nav-logo-section {
+  /* display: flex;
+  align-items: center; */
+  /* gap: 10px; */
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.uk-nav-logo-section img {
+  width: 100px;
+  /* height: 20px; */
+  /* object-fit:fill; */
+}
+
+.uk-nav-logo-title h1 {
+  color: var(--white);
+  font-size: 19px;
+  font-weight: bold;
+   margin-top: 18px;
+}
+
+.uk-nav-logo-title p {
+  color: var(--white);
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.uk-nav-links-desktop {
+  display: flex;
+  gap: 25px;
+  padding-top: 15px;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+}
+
+.uk-nav-links-desktop li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color var(--transition-fast);
+}
+
+.uk-nav-links-desktop li a:hover {
+  color: var(--hover-orange);
+}
+
+/* ---------------- Order Button ---------------- */
+.uk-nav-order-btn-desktop {
+  display: flex;
+}
+
+.uk-nav-order-btn-desktop button {
+  background-color: var(--white);
+  border-radius: var(--radius-pill);
+  color: var(--primary-blue);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  cursor: pointer;
+}
+
+.uk-nav-order-btn-desktop button:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+/* ---------------- Sticky Navbar ---------------- */
+/* .uk-nav-sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--black);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: slideDown var(--transition-fast);
+  z-index: var(--z-navbar);
+} */
+.uk-nav-sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black; /* or your theme */
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ---------------- Mobile Menu ---------------- */
+.uk-nav-menu-icon {
+  display: none;
+  font-size: 24px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.uk-nav-mobile-menu {
+  position: fixed;
+  right: 0;
+  /* width: 34vw; */
+  width: 44vw;
+  max-width: 300px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  z-index: var(--z-menu);
+  animation: slideRight var(--transition-fast);
+}
+
+.uk-nav-mobile-menu.open {
+  display: flex;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.uk-nav-mobile-menu ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.uk-nav-mobile-menu li {
+  padding: 6px 0;
+}
+
+.uk-nav-mobile-menu li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  padding: 8px 0;
+}
+
+.uk-nav-submenu-parent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.uk-submenu-toggle {
+  cursor: pointer;
+  font-size: 12px;
+  user-select: none;
+  padding-left: 5px;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.uk-submenu-mobile {
+  display: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.uk-submenu-mobile.show {
+  display: block;
+  max-height: 500px;
+}
+
+.uk-submenu-mobile li a {
+  font-size: 14px;
+  padding: 6px 0 6px 10px;
+}
+
+/* ---------------- Submenu Desktop (FIXED CENTER ALIGNMENT) ---------------- */
+.uk-has-submenu {
+  position: relative;
+}
+
+.uk-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--black);
+  padding: 10px 0;
+  flex-direction: column;
+  min-width: 220px;
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.uk-submenu li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.3s;
+  display: block;
+}
+
+.uk-submenu li a:hover {
+  background-color: var(--hover-orange);
+  color: var(--white);
+}
+
+@media (min-width: 1113px) {
+  .uk-has-submenu:hover .uk-submenu {
+    display: flex;
+  }
+}
+
+/* ---------------- Active Styles ---------------- */
+.uk-nav-links-desktop li a.active,
+.uk-submenu li a.active {
+  color: var(--white);
+  border-bottom: 2px solid var(--hover-orange);
+}
+
+.uk-has-submenu.active-parent > a {
+  color: var(--hover-orange);
+}
+
+/* ---------------- Top Bar (Mobile) ---------------- */
+.uk-nav-mobile-topbar {
+  display: none;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 8px 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.uk-nav-mobile-topbar .uk-nav-mobile-social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* ---------------- Social Icons ---------------- */
+.email-icon {
+  color: var(--email-red);
+}
+
+.instagram-icon {
+  color: var(--instagram);
+}
+
+.facebook-icon {
+  color: var(--facebook);
+}
+
+.whatsapp-icon {
+  color: var(--whatsapp);
+}
+
+.uk-nav-social-icons a,
+.uk-nav-mobile-social-icons a {
+  font-size: 19px;
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.uk-nav-social-icons a:hover,
+.uk-nav-mobile-social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* ---------------- Franchise Button (Mobile) ---------------- */
+.uk-nav-mobile-order-button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.uk-nav-mobile-order-button button {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  font-weight: bold;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: var(--radius-sm);
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border: none;
+}
+
+.uk-nav-mobile-order-button button:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 1112px) {
+  .uk-nav-top-bar,
+  .uk-nav-links-desktop,
+  .uk-nav-order-btn-desktop {
+    display: none;
+  }
+
+  .uk-nav-menu-icon {
+    display: block;
+  }
+
+  .uk-nav-mobile-topbar {
+    display: flex;
+  }
+
+  .uk-nav-main-navbar {
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .uk-nav-logo-title h1 {
+    font-size: 18px;
+  }
+
+  .uk-nav-logo-title p {
+    font-size: 12px;
+  }
+}
+
+/* ---------------- Spacer for sticky navbar ---------------- */
+.page-container {
+  padding-top: 130px;
+}

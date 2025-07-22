@@ -1,0 +1,131 @@
+
+ :root {
+  --birthdaypage-primary-1:white;
+  --birthdaypage-hover:#bd976d;
+  --birthdaypage-text: #1f1717;
+  --birthdaypage-white: #bd976d;
+  --birthdaypage-black: #000000;
+  --birthdaypage-gap-md: 10px;
+  --birthdaypage-gap-sm: 10px;
+  --birthdaypage-radius: 10px;
+  --birthdaypage-transition: 0.3s ease;
+}
+
+.birthdaypage-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: var(--birthdaypage-white);
+  color: var(--birthdaypage-text);
+  gap: var(--birthdaypage-gap-md);
+  align-items: center;
+  justify-content: center;
+  min-height: 500px; /* ✅ Base height */
+}
+
+.birthdaypage-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.birthdaypage-main-image {
+  width: 100%;
+  max-width: 650px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--birthdaypage-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.birthdaypage-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--birthdaypage-gap-sm);
+  padding: 20px;
+}
+
+.birthdaypage-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--birthdaypage-primary-1);
+}
+
+.birthdaypage-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--birthdaypage-primary-1);
+
+}
+
+.birthdaypage-button {
+  background-color: black;
+  color: var(--birthdaypage-primary-1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--birthdaypage-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--birthdaypage-transition);
+  width: fit-content;
+  align-self: center;
+}
+
+.birthdaypage-button:hover {
+  background-color: var(--birthdaypage-primary-1);
+  color: #000000;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 968px) {
+  .birthdaypage-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+    min-height: 450px; /* ✅ Adjusted for tablets */
+  }
+
+  .birthdaypage-content {
+    padding: 15px 10px;
+    align-items: center;
+  }
+
+  .birthdaypage-title {
+    font-size: 26px;
+  }
+
+  .birthdaypage-description {
+    font-size: 15px;
+  }
+
+  .birthdaypage-button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  .birthdaypage-section {
+    min-height: 420px; /* ✅ Adjusted for small devices */
+  }
+
+  .birthdaypage-title {
+    font-size: 22px;
+  }
+
+  .birthdaypage-description {
+    font-size: 14px;
+  }
+
+  .birthdaypage-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

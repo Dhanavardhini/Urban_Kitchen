@@ -1,0 +1,71 @@
+:root {
+  --online-bg: #bd976d;
+  --online-text: #000;
+  --online-highlight: #59568c;
+  --online-btn-bg: #000;
+  --online-btn-color: #fff;
+  --online-btn-radius: 10px;
+  --online-gap: 1.5rem;
+  --online-font: 'Segoe UI', sans-serif;
+}
+
+.online-section {
+  background-color: var(--online-bg);
+  color: var(--online-text);
+  text-align: center;
+  padding: 1.6rem 1rem;
+  font-family: var(--online-font);
+}
+
+.online-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.online-title .highlight {
+  color: var(--online-highlight);
+}
+
+.online-description {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.online-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--online-gap);
+  flex-wrap: wrap;
+}
+
+.online-btn {
+  background-color: var(--online-btn-bg);
+  color: var(--online-btn-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: var(--online-btn-radius);
+  font-weight: 600;
+  transition: background 0.3s ease;
+  min-width: 160px;
+  text-align: center;
+}
+
+.online-btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive: Stack buttons on smaller devices */
+@media (max-width: 1024px) {
+  .online-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .online-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

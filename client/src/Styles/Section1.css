@@ -1,0 +1,153 @@
+:root {
+  --section-font: 'Segoe UI', sans-serif;
+  --section-title-color: #222;
+  --section-subtitle-color: #bd976d;
+  --section-desc-color: #444;
+  --section-icon-color:#bd976d;
+  --section-bg-light: #f9f9f9;
+  --section-radius: 12px;
+  --section-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --section-gap: 2rem;
+  --section-padding: 30px;
+}
+
+.section1-container {
+  padding: var(--section-padding);
+  font-family: var(--section-font);
+}
+
+.section1-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--section-gap);
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left Image Animation */
+.section1-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  animation: slideInLeft 4s ease-in-out infinite;
+}
+
+.section1-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Right Side Text & Cards Animation */
+.section1-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  animation: slideInRight 4s ease-in-out infinite;
+}
+
+.section1-subtitle {
+  color: var(--section-subtitle-color);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.section1-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--section-title-color);
+  margin-bottom: 1rem;
+}
+
+.section1-description {
+  font-size: 1rem;
+  color: var(--section-desc-color);
+  margin-bottom: 2rem;
+}
+
+.section1-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section1-card {
+  background: var(--section-bg-light);
+  border-radius: var(--section-radius);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  flex: 1 1 calc(50% - 0.75rem);
+  box-shadow: var(--section-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideInRight 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.section1-card .card-icon {
+  font-size: 2rem;
+  color: var(--section-icon-color);
+  margin-bottom: 0.5rem;
+}
+
+.section1-card h5 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.section1-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0.8;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1128px) {
+  .section1-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section1-cards {
+    justify-content: center;
+  }
+
+  .section1-card {
+    flex: 1 1 100%;
+    max-width: 260px;
+  }
+}

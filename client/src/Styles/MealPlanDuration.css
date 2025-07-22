@@ -1,0 +1,166 @@
+/* .planduration-section {
+  background-color: #fefefe;
+  padding: 0px 20px;
+}
+
+.planduration-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.planduration-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.planduration-card {
+  background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+  background-color: white;
+  border-radius: 20px;
+  padding: 1.4rem 1rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.planduration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.planduration-icon {
+  width: 60px;
+  height: 60px;
+   background-color:#bd976d;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.planduration-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.planduration-card-desc {
+  font-size: 0.95rem;
+  color: #666;
+  padding: 0 10px;
+} */
+
+
+/* Section styling */
+.planduration-section {
+  padding: 0px 20px;
+}
+
+/* Titles */
+.planduration-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.planduration-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout */
+.planduration-grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* 1030px and above: 3 cards per row with left/right margin */
+@media (min-width: 1030px) {
+  .planduration-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* 899px to 1029px: 3 cards per row */
+@media (max-width: 1029px) and (min-width: 899px) {
+  .planduration-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 560px to 898px: 2 cards per row */
+@media (max-width: 898px) and (min-width: 560px) {
+  .planduration-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 560px: 1 card per row */
+@media (max-width: 509px) {
+  .planduration-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card styling */
+.planduration-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1.4rem 1rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.planduration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Icon styling */
+.planduration-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #bd976d;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text inside cards */
+.planduration-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.planduration-card-desc {
+  font-size: 0.95rem;
+  color: #666;
+  padding: 0 10px;
+}

@@ -1,0 +1,44 @@
+/* ------------------ Order Hero Banner ------------------ */
+.order-hero-banner-container {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Keeps image ratio clean on large screens */
+  max-height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.order-hero-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop nicely by default */
+  display: block;
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .order-hero-banner-container {
+    aspect-ratio: auto;
+    height: 42vh;
+  }
+}
+
+/* For mobile */
+@media (max-width: 480px) {
+  .order-hero-banner-container {
+    height: 40vh;
+  }
+}
+
+/* ✅ Specific Fix: Fully responsive on very small screens */
+@media (max-width: 410px) {
+  .order-hero-banner-container {
+    height: auto;
+    max-height: 240px;
+  }
+
+  .order-hero-banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Shows full image without cutting */
+  }
+}

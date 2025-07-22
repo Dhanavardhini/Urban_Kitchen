@@ -1,0 +1,123 @@
+:root {
+  --familypage-primary:white;
+  --familypage-hover: black;
+  --familypage-text: #1f1717;
+  --familypage-white: #bd976d;
+  --familypage-black: #000000;
+  --familypage-gap-md: 20px;
+  --familypage-gap-sm: 10px;
+  --familypage-radius: 10px;
+  --familypage-transition: 0.3s ease;
+}
+
+.familypage-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: var(--familypage-white);
+  color: var(--familypage-text);
+  gap: var(--familypage-gap-md);
+  align-items: center;
+}
+
+.familypage-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.familypage-main-image {
+  width: 100%;
+  max-width: 650px;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: var(--familypage-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.familypage-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--familypage-gap-sm);
+  padding: 20px;
+}
+
+.familypage-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--familypage-primary);
+}
+
+.familypage-description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--familypage-primary);
+}
+
+.familypage-button {
+  background-color: var(--familypage-hover);
+  color: var(--familypage-primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--familypage-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--familypage-transition);
+  width: fit-content;
+  align-self: center;
+}
+
+.familypage-button:hover {
+  background-color:  var(--familypage-primary);
+  color:  var(--familypage-hover);
+}
+
+/* Responsive: Tablets */
+@media (max-width: 998px) {
+  .familypage-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .familypage-content {
+    padding: 15px 10px;
+    align-items: center;
+  }
+
+  .familypage-title {
+    font-size: 26px;
+  }
+
+  .familypage-description {
+    font-size: 15px;
+  }
+
+  .familypage-button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  .familypage-title {
+    font-size: 22px;
+  }
+
+  .familypage-description {
+    font-size: 14px;
+  }
+
+  .familypage-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

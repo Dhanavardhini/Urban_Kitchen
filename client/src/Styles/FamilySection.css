@@ -1,0 +1,37 @@
+:root {
+  --family-bg:#bd976d;
+  --family-text-color:white;
+  --family-heading-color:white;
+  --family-font: 'Poppins', sans-serif;
+  --family-padding: 3rem 1.5rem 1rem 1.5rem;
+  --family-max-width: 800px;
+  --family-heading-size: 2rem;
+  --family-para-size: 1.1rem;
+  --family-line-height: 1.6;
+}
+
+.family-section {
+  background-color: var(--family-bg);
+  padding: var(--family-padding);
+  font-family: var(--family-font);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.family-text {
+  max-width: var(--family-max-width);
+}
+
+.family-heading {
+  font-size: var(--family-heading-size);
+  font-weight: 700;
+  color: var(--family-heading-color);
+  margin-bottom: 1rem;
+}
+
+.family-paragraph {
+  font-size: var(--family-para-size);
+  color: var(--family-text-color);
+  line-height: var(--family-line-height);
+}

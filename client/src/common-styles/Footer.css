@@ -1,0 +1,226 @@
+:root {
+  --footer-bg-dark: #111;
+  --footer-text-light: #fff;
+  --footer-accent:#bd976d;
+  --footer-font: 'Arial', sans-serif;
+  --footer-gap-lg: 30px;
+  --footer-gap-md: 16px;
+  --footer-padding: 60px 20px 20px;
+  --footer-padding-mobile: 40px 15px 20px;
+  --footer-font-heading: 20px;
+  --footer-font-text: 15px;
+
+  --facebook-color: #1877F2;
+  --instagram-color: #E4405F;
+}
+
+.footer {
+  background-color: var(--footer-bg-dark);
+  color: var(--footer-text-light);
+  padding: var(--footer-padding);
+  font-family: var(--footer-font);
+  position: relative;
+  overflow: hidden !important;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--footer-gap-lg);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo,
+.footer-heading {
+  font-size: var(--footer-font-heading);
+  margin-bottom: 15px;
+  color: var(--footer-accent);
+}
+
+.footer-text,
+.footer-section p,
+.footer-address,
+.footer-bottom {
+  font-size: var(--footer-font-text);
+  line-height: 1.6;
+  color: var(--footer-text-light);
+  text-decoration: none;
+}
+
+.footer-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--footer-text-light);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-contact-link:hover {
+  color: var(--footer-accent);
+}
+
+.footer-address-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--footer-text-light);
+    text-decoration: none;
+  color: white;
+}
+
+.footer-address-row .map-icon {
+  font-size: 20px;
+  color: var(--footer-accent);
+  margin-top: 4px;
+}
+
+.footer-address-text {
+  font-size: var(--footer-font-text);
+  line-height: 1.5;
+
+}
+
+.footer-social-icons a {
+  color: var(--footer-text-light);
+  margin-right: 10px;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.footer-social-icons a:nth-child(1):hover {
+  color: var(--facebook-color);
+}
+
+.footer-social-icons a:nth-child(2):hover {
+  color: var(--instagram-color);
+}
+
+/* .footer-mini-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+} */
+
+.footer-mini-logo {
+  /* object-fit: cover; */
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hsd-logo {
+  width: 56px !important;
+  height: 4% !important;
+  border-radius: 12px !important;
+
+}
+
+.jus-logo {
+  width: 40px !important;
+  height: 38px !important;
+  border-radius: 12px !important;
+}
+
+.px-logo {
+  width: 110px !important;
+  height: 38px !important;
+  border-radius: 2px !important;
+}
+.footer-mini-logo:hover {
+  transform: scale(1.2);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-link {
+  color: var(--footer-text-light);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--footer-accent);
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-wrap: wrap;
+    gap: var(--footer-gap-md);
+  }
+
+  .footer-section {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--footer-padding-mobile);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--footer-gap-md);
+  }
+
+  .footer-section {
+    min-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes footer-fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-animated {
+  animation: footer-fadeInUp 1s ease-out;
+}
