@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
-import '../../../../Styles/Form/SelectPlan.css';
+import '../../../../styles/form/selectplan.css';
 
 function SelectPlan({ value }) {
   return (

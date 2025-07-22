@@ -1,5 +1,5 @@
 import React from 'react';
-import '../HealthyStyles/HealthySection6.css';
+import '../healthystyles/healthysection6.css';
 import { FaStar } from 'react-icons/fa';
 
 // ✅ Import images properly from src/assets

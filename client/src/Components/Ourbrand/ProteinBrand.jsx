@@ -28,7 +28,7 @@
 
 
 import React from 'react';
-import '../../Styles/ProteinBrand.css';
+import '../../styles/proteinbrand.css';
 import proteinLogo from '../../assets/px-logo.png';
 import proteinImage from '../../assets/protienbrand.jpg';
 

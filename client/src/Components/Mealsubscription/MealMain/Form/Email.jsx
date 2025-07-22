@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
-import '../../../../Styles/Form/Email.css';
+import '../../../../styles/form/email.css';
 
 function Email({ value, onChange }) {
   return (

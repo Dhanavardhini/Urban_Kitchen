@@ -1,7 +1,7 @@
 
 import React from 'react';
-import '../HealthyStyles/HealthySection1.css';
-import design from '../assets/design.jpeg';
+import '../healthystyles/healthysection1.css';
+// import design from '../assets/design.jpeg';
 import { FaBoxOpen, FaMapMarkerAlt, FaDollarSign } from 'react-icons/fa';
 
 function HealthySection1() {

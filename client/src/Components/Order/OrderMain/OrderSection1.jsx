@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../Styles/OrderSection1.css';
+import '../../../styles/ordersection1.css';
 
 function OrderSection1() {
   return (

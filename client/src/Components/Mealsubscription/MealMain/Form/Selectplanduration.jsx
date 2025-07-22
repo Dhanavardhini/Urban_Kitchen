@@ -45,7 +45,7 @@
      
 
 import React, { useState } from 'react';
-import '../../../../Styles/Form/Selectplanduration.css';
+import '../../../../styles/form/selectplanduration.css';
 
 function Selectplanduration({ value, onChange }) {
   const [focused, setFocused] = useState(false);

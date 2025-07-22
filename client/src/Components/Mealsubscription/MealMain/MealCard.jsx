@@ -2,11 +2,11 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../../Styles/MealCard.css';
-import Meal1 from '../../../assets/Meal/Meal1.png';
-import Meal2 from '../../../assets/Meal/Meal2.png';
-import Meal3 from '../../../assets/Meal/Meal3.png';
-import Meal4 from '../../../assets/Meal/Meal4.png';
+import '../../../styles/mealcard.css';
+import Meal1 from '../../../assets/meal/meal1.png';
+import Meal2 from '../../../assets/meal/meal2.png';
+import Meal3 from '../../../assets/meal/meal3.png';
+import Meal4 from '../../../assets/meal/meal4.png';
 
 const meals = [
   {

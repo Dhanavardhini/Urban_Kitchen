@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../Styles/PartyPage.css';
+import '../../styles/partypage.css';
 import partyImage from '../../assets/party.jpeg';
 // import Footer from '../../common-pages/Footer';
 

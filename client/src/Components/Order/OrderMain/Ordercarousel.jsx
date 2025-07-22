@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../../Styles/Ordercarousel.css';
+import '../../../styles/ordercarousel.css';
 
-import heroImage from '../../../assets/2.jpg'; // ✅ Choose your main hero image
+import heroImage from '../../../assets/orderbanner.jpg'; // ✅ Choose your main hero image
 
 function OrderHeroBanner() {
   return (

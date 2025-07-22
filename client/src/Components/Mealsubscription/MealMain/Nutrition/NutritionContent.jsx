@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../../../Styles/NutritionContent.css";
+import "../../../../styles/nutritioncontent.css";
 
 function NutritionContent() {
   return (

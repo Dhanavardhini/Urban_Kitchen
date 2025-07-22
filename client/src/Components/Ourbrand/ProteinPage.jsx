@@ -1,5 +1,5 @@
 import React from 'react'
-import ProteinBrand from './ProteinBrand'
+import ProteinBrand from './proteinbrand'
 // import Footer from '../../common-pages/Footer'
 
 function ProteinPage() {

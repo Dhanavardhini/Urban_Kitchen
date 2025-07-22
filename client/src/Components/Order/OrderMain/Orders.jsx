@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // <-- Import useNavigate
-import '../../../Styles/Orders.css';
+import '../../../styles/orders.css';
 
 // Import 4 different images
-import birthdayImg from '../../../assets/Birthday.jpeg';
-import corporateImg from '../../../assets/Corporate Events.jpeg';
-import familyImg from '../../../assets/Family1.jpeg';
+import birthdayImg from '../../../assets/birthday.jpeg';
+import corporateImg from '../../../assets/corporateevents.jpeg';
+import familyImg from '../../../assets/family1.jpeg';
 import platterImg from '../../../assets/party.jpeg';
 
 // Card data with link paths

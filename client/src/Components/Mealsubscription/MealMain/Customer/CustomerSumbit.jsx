@@ -154,8 +154,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import '../../../../Styles/CustomerSumbit.css';
-import CustomerForm from './CustomerFrom';
+import '../../../../styles/customersumbit.css';
+import CustomerForm from './customerfrom';
 
 function CustomerSumbit() {
   const location = useLocation();

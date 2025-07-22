@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/BrandHero.css';
+import '../../styles/brandhero.css';
 
 function BrandHero() {
   return (

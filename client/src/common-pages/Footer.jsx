@@ -1,11 +1,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Common-styles/Footer.css';
+import '../common-styles/footer.css';
 import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 import { FiPhone, FiMail } from 'react-icons/fi';
-import hsd from '../assets/Healthy-Salad-and-Detox-copy.png';
-import jus from '../assets/Jus Friez logo.jpg';
+import hsd from '../assets/healthy-salad-and-detox-copy.png';
+import jus from '../assets/jusfriezlogo.jpg';
 import px from '../assets/px-logo.png';
 
 const socialLinks = [

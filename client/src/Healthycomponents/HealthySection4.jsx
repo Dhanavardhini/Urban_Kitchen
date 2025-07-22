@@ -1,5 +1,5 @@
 import React from 'react';
-import '../HealthyStyles/HealthySection4.css';
+import '../healthystyles/healthysection4.css';
 import { FaClock, FaShoppingBag, FaMotorcycle } from 'react-icons/fa';
 
 function HealthySection4() {

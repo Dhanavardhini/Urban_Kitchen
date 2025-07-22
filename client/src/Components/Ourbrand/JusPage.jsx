@@ -1,5 +1,5 @@
 import React from 'react'
-import JusBrand from './JusBrand'
+import JusBrand from './jusbrand'
 // import Footer from '../../common-pages/Footer'
 
 function JusPage() {

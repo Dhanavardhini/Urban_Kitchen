@@ -1,5 +1,5 @@
 import React from "react";
-import "../Jusstyles/JusPopup.css";
+import "../jusstyles/juspopup.css";
 import { FaTimes } from "react-icons/fa";
 
 function JusPopup({ onClose, children }) {

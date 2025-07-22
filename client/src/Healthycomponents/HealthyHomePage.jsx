@@ -1,10 +1,10 @@
 
 import React, { useEffect } from "react";
-import '../HealthyStyles/HealthyHome.css';
-import img1 from '../assets/Code-Red-Salad.jpg';
-import img2 from "../assets/Immunity-Booster-Salad.jpg";
-import img3 from '../assets/Protein-Rich-Peanut-Salad.jpg';
-import img4 from '../assets/Lobia-Lentil-Salad-Bowl.jpg';
+import '../healthystyles/healthyhome.css';
+import img1 from '../assets/code-red-salad.jpg';
+import img2 from "../assets/immunity-booster-salad.jpg";
+import img3 from '../assets/protein-rich-peanut-salad.jpg';
+import img4 from '../assets/lobia-lentil-salad-bowl.jpg';
 import img5 from '../assets/h1.png';
 import { FaShoppingCart } from 'react-icons/fa';
 

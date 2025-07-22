@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Styles/HealthyBrand.css';
-import healthyLogo from '../../assets/Healthy-Salad-and-Detox-copy.png';
+import '../../styles/healthybrand.css';
+import healthyLogo from '../../assets/healthy-salad-and-detox-copy.png';
 import healthyImage from '../../assets/healthybrand.jpg';
 
 function HealthyBrand() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Birthdaysection1.css';
+import '../../styles/birthdaysection1.css';
 
 function Birthdaysection1() {
   return (

@@ -135,7 +135,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import '../../../Styles/FranchisePopup.css';
+import '../../../styles/franchisepopup.css';
 
 const FranchisePopup = ({ toggleForm }) => {
   const [formData, setFormData] = useState({

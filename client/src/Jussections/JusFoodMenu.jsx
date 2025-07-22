@@ -1,16 +1,16 @@
 
 import React from 'react';
-import '../Jusstyles/JusFoodMenu.css';
+import '../jusstyles/jusfoodmenu.css';
 // Import images correctly here, so Vite can resolve them
-import FrenchFriezBuckets from "../assets/French Friez Buckets.png";
-import VegFriezBuckets from "../assets/Veg Friez Buckets.png";
-import ChickenLollipopBucket from "../assets/Chicken Lollipop Bucket.jpg";
-import Maggi from "../assets/Maggi.png";
-import PunjabiSamosa from "../assets/Punjabi Samosa.png";
-import VegMomoBucket from "../assets/Veg Momo Bucket.png";
-import ChickenSpringRolls from "../assets/Chicken_Spring_Rolls.png";
+import FrenchFriezBuckets from "../assets/frenchfriezbuckets.png";
+import VegFriezBuckets from "../assets/vegfriezbuckets.png";
+import ChickenLollipopBucket from "../assets/chickenlollipopbucket.jpg";
+import Maggi from "../assets/maggi.png";
+import PunjabiSamosa from "../assets/punjabisamosa.png";
+import VegMomoBucket from "../assets/vegmomobucket.png";
+import ChickenSpringRolls from "../assets/chicken-spring-rolls.png";
 import burger from "../assets/burger.jpg";
-import keyburger from "../assets/key burger4.png";
+import keyburger from "../assets/keyburger4.png";
 
 const categories = [
   { icon: FrenchFriezBuckets, label: 'French Friez Buckets' },

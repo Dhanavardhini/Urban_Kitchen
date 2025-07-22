@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Partysection.css';
+import '../../styles/partysection.css';
 
 function Partysection() {
   return (

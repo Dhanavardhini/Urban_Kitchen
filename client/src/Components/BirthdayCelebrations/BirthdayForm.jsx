@@ -109,7 +109,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../Styles/BirthdayForm.css';
+import '../../styles/birthdayform.css';
 
 function BirthdayForm() {
   const [formData, setFormData] = useState({

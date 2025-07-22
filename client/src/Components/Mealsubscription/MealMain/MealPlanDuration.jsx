@@ -41,7 +41,7 @@
 
 
 import React from 'react';
-import '../../../Styles/MealPlanDuration.css';
+import '../../../styles/mealplanduration.css';
 
 const durations = [
   'Weekly',

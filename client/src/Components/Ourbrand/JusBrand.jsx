@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Styles/JusBrand.css';
-import jusLogo from '../../assets/Jus Friez logo.jpg';
+import '../../styles/jusBrand.css';
+import jusLogo from '../../assets/jusfriezlogo.jpg';
 import jusImage from '../../assets/maggi.jpg';
 
 function JusBrand() {

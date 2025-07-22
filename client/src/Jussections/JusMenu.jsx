@@ -248,79 +248,79 @@
 // export default JusMenu;
 
 import React, { useState } from "react";
-import "../Jusstyles/JusMenu.css";
+import "../jusstyles/jusmenu.css";
 
 // ✅ Import all images
-import jusS1 from '../assets/jus/Veg Spring Roll.png';
-import jusS2 from '../assets/jus/Onion Rings.png';
-import jusS3 from '../assets/jus/Corn Samosa.png';
-import jusS4 from '../assets/jus/Paneer Roll.png';
-import jusS5 from '../assets/jus/Punjabi Samosa.png';
-import jusS6 from '../assets/jus/Breaded Veg Samosa.png';
-import jusS7 from '../assets/jus/Cheese Corn Nuggets.png';
-import jusS8 from '../assets/jus/Paneer Cutlet.png';
-import jusS9 from '../assets/jus/Potato Cheese Balls.png';
-import jusS10 from '../assets/jus/Aloo Tikki.png';
-import jusS11 from '../assets/jus/Cheesy Pizza Fingers.png';
-import jusS12 from '../assets/jus/Cheesy Corn Triangle.png';
-import jusS13 from '../assets/jus/Veg Cutlet.png';
-import jusS14 from '../assets/jus/Veg Samosa.png';
+import jusS1 from '../assets/jus/vegspringroll.png';
+import jusS2 from '../assets/jus/onionrings.png';
+import jusS3 from '../assets/jus/cornsamosa.png';
+import jusS4 from '../assets/jus/paneerroll.png';
+import jusS5 from '../assets/jus/punjabisamosa.png';
+import jusS6 from '../assets/jus/breadedvegsamosa.png';
+import jusS7 from '../assets/jus/cheesecornnuggets.png';
+import jusS8 from '../assets/jus/paneercutlet.png';
+import jusS9 from '../assets/jus/potatocheeseballs.png';
+import jusS10 from '../assets/jus/alootikki.png';
+import jusS11 from '../assets/jus/cheesypizzafingers.png';
+import jusS12 from '../assets/jus/cheesycorntriangle.png';
+import jusS13 from '../assets/jus/vegcutlet.png';
+import jusS14 from '../assets/jus/vegsamosa.png';
 
-import jusnon1 from '../assets/jus/Crispy Spicy Chicken.png';
-import jusnon2 from '../assets/jus/Chicken Roll.png';
-import jusnon3 from '../assets/jus/Chicken Samosa.png';
-import jusnon4 from '../assets/jus/Chicken Cutlet.png';
-import jusnon5 from '../assets/jus/Crispy Chicken Fries.png';
-import jusnon6 from '../assets/jus/Chicken Strips.png';
-import jusnon7 from '../assets/jus/Chicken Nuggets.png';
-import jusnon8 from '../assets/jus/Chicken Popcorn.png';
-import jusnon9 from '../assets/jus/Chicken Seekh Kebab.png';
-import jusnon10 from '../assets/jus/Chicken Spring Roll.png';
-import jusnon11 from '../assets/jus/Chicken Cheese Ball.png';
-import jusnon12 from '../assets/jus/Chicken Garlic Finger.png';
-import jusnon13 from '../assets/jus/Chicken Lollipop.png';
-import jusnon14 from '../assets/jus/Chicken Burger Patty.png';
+import jusnon1 from '../assets/jus/crispyspicychicken.png';
+import jusnon2 from '../assets/jus/chickenroll.png';
+import jusnon3 from '../assets/jus/chickensamosa.png';
+import jusnon4 from '../assets/jus/chickencutlet.png';
+import jusnon5 from '../assets/jus/crispychickenfries.png';
+import jusnon6 from '../assets/jus/chickenstrips.png';
+import jusnon7 from '../assets/jus/chickennuggets.png';
+import jusnon8 from '../assets/jus/chickenpopcorn.png';
+import jusnon9 from '../assets/jus/chickenseekhkebab.png';
+import jusnon10 from '../assets/jus/chickenspringroll.png';
+import jusnon11 from '../assets/jus/chickencheeseball.png';
+import jusnon12 from '../assets/jus/chickengarlicfinger.png';
+import jusnon13 from '../assets/jus/chickenlollipop.png';
+import jusnon14 from '../assets/jus/chickenburgerpatty.png';
 
-import jusnacha1 from '../assets/jus/Zesty Jalapeno Nacho Chips.png';
-import jusnacha2 from '../assets/jus/Creamy Cheese Nacho Chips.png';
-import jusnacha3 from '../assets/jus/Mexican Chilli Nacho Chips.png';
-import jusnacha4 from '../assets/jus/Peri Peri Nacho Chips.png';
+import jusnacha1 from '../assets/jus/zestyjalapenonachochips.png';
+import jusnacha2 from '../assets/jus/creamycheesenachochips.png';
+import jusnacha3 from '../assets/jus/mexicanchillinachochips.png';
+import jusnacha4 from '../assets/jus/periperinachochips.png';
 
-import jusveg1 from '../assets/jus/French Fries.png';
-import jusveg2 from '../assets/jus/Masala French Fries.png';
-import jusveg3 from '../assets/jus/Peri Peri French Fries.png';
+import jusveg1 from '../assets/jus/frenchfries.png';
+import jusveg2 from '../assets/jus/masalafrenchfries.png';
+import jusveg3 from '../assets/jus/periperifrenchfries.png';
 
-import jusmag1 from '../assets/jus/Masala Maggi.png';
-import jusmag2 from '../assets/jus/Vegetable Maggi.png';
-import jusmag3 from '../assets/jus/Cheese Maggi.png';
-import jusmag4 from '../assets/jus/Chicken Cheese Maggi.png';
-import jusmag5 from '../assets/jus/Egg Cheese Maggi.png';
+import jusmag1 from '../assets/jus/masalamaggi.png';
+import jusmag2 from '../assets/jus/vegetablemaggi.png';
+import jusmag3 from '../assets/jus/cheesemaggi.png';
+import jusmag4 from '../assets/jus/chickencheesemaggi.png';
+import jusmag5 from '../assets/jus/eggcheesemaggi.png';
 
-import jusbuc1 from '../assets/jus/Salted French Friez Bucket.png';
-import jusbuc2 from '../assets/jus/Peri Peri French Friez Bucket.png';
-import jusbuc3 from '../assets/jus/Crispy Chicken Friez Bucket.png';
-import jusbuc4 from '../assets/jus/Chicken Lollipop Bucket.png';
-import jusbuc5 from '../assets/jus/Chicken Popcorn Bucket.png';
-import jusbuc6 from '../assets/jus/Non-Veg Momo Bucket.png';
-import jusbuc7 from '../assets/jus/Veg Momo Bucket.png';
+import jusbuc1 from '../assets/jus/saltedfrenchfriezbucket.png';
+import jusbuc2 from '../assets/jus/periperifrenchfriezbucket.png';
+import jusbuc3 from '../assets/jus/crispychickenfriezbucket.png';
+import jusbuc4 from '../assets/jus/chickenlollipopbucket.png';
+import jusbuc5 from '../assets/jus/chickenpopcornbucket.png';
+import jusbuc6 from '../assets/jus/non-vegmomobucket.png';
+import jusbuc7 from '../assets/jus/vegmomobucket.png';
 
-import juspops1 from '../assets/jus/Zesty Cran Zing.png';
-import juspops2 from '../assets/jus/Blush Rush.png';
-import juspops3 from '../assets/jus/Purple Pop.png';
-import juspops4 from '../assets/jus/Mojigreen (Green Apple).png';
-import juspops5 from '../assets/jus/Lime Crime.png';
-import juspops6 from '../assets/jus/Orange Soda.png';
-import juspops7 from '../assets/jus/Pine Fizzler.png';
-import juspops8 from '../assets/jus/CrushBerry.png';
-import juspops9 from '../assets/jus/Palm Pop.png';
+import juspops1 from '../assets/jus/zestycranzing.png';
+import juspops2 from '../assets/jus/blushrush.png';
+import juspops3 from '../assets/jus/purplepop.png';
+import juspops4 from '../assets/jus/mojigreen-green-apple.png';
+import juspops5 from '../assets/jus/limecrime.png';
+import juspops6 from '../assets/jus/orangesoda.png';
+import juspops7 from '../assets/jus/pinefizzler.png';
+import juspops8 from '../assets/jus/crushberry.png';
+import juspops9 from '../assets/jus/palmpop.png';
 
-import jusmomo1 from '../assets/jus/Mixed Veg Momos.png';
-import jusmomo2 from '../assets/jus/Paneer Tikka Momos.png';
-import jusmomo3 from '../assets/jus/Veg Schezwan Momos.png';
-import jusmomo4 from '../assets/jus/Corn & Cheese Momos.png';
-import jusmomo5 from '../assets/jus/Chicken Tikka Momos.png';
-import jusmomo6 from '../assets/jus/Chicken Peri Peri Momos.png';
-import jusmomo7 from '../assets/jus/Chicken Schezwan Momos.png';
+import jusmomo1 from '../assets/jus/mixedvegmomos.png';
+import jusmomo2 from '../assets/jus/paneertikkamomos.png';
+import jusmomo3 from '../assets/jus/vegschezwanmomos.png';
+import jusmomo4 from '../assets/jus/corncheesemomos.png';
+import jusmomo5 from '../assets/jus/chickentikkamomos.png';
+import jusmomo6 from '../assets/jus/chickenperiperimomos.png';
+import jusmomo7 from '../assets/jus/chickenschezwanmomos.png';
 
 const categories = [
   "Snacks & Starters",

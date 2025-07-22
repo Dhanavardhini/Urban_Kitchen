@@ -56,7 +56,7 @@
 // export default Services;
 
 import React from 'react';
-import '../../Styles/Services.css';
+import '../../styles/services.css';
 import icon1 from '../../assets/icon1.png';
 import icon2 from '../../assets/icon2.png';
 import icon3 from '../../assets/icon3.png';

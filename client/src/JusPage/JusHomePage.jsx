@@ -1,7 +1,7 @@
 
-import '../Jusstyles/JusHomePage.css';
-import logo1 from '../assets/Artboard 7.png';
-import logo2 from '../assets/Deliverylogo1.png';
+import '../jusstyles/jushomepage.css';
+import logo1 from '../assets/artboard7.png';
+import logo2 from '../assets/deliverylogo1.png';
 import left from '../assets/homepage.png';
 import left1 from '../assets/homeleft.png';
 import React, { useState, useEffect } from 'react';

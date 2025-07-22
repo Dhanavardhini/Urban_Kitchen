@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import enjoy from '../assets/leftter.jpg';
-import '../Jusstyles/JusEnjoyPage.css';  // make sure path is correct
+import '../jusstyles/jusenjoypage.css';  // make sure path is correct
 
 
 function JusEnjoyPage() {

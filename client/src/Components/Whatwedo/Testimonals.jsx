@@ -156,7 +156,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import '../../Styles/Testimonals.css';
+import '../../styles/testimonals.css';
 import user1 from '../../assets/girl1.png';
 import user2 from '../../assets/man.png';
 import user3 from '../../assets/girl2.png';

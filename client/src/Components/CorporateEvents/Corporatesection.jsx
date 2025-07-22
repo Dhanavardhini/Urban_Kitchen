@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Corporatesection.css';
+import '../../styles/corporatesection.css';
 
 function Corporatesection() {
   return (

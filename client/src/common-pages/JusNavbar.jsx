@@ -1,7 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import '../Jusstyles/JusNavbar.css';
+import '../jusstyles/jusnavbar.css';
 import {
   AppBar,
   Toolbar,
@@ -17,11 +17,11 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import logo from '../assets/Jus Friez logo.jpg';
-import dlogo from '../assets/Deliverylogo1.png';
-import JusPopup from '../jussections/JusPopup';
-import JusMenu from '../jussections/JusMenu';
-import JusPdf from '../../public/Jus Friez Menu Card.pdf';
+import logo from '../assets/jusfriezlogo.jpg';
+import dlogo from '../assets/deliverylogo1.png';
+import JusPopup from '../jussections/juspopup';
+import JusMenu from '../jussections/jusmenu';
+import JusPdf from '../../public/jus-friez-menu-card.pdf';
 
 const navItems = ['Home', 'Best Deal', 'Food Menu', 'Blog & News'];
 

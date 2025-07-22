@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../Styles/CorporatePage.css';
-import corporateImage from '../../assets/Corporate Events.jpeg';
+import '../../styles/corporatepage.css';
+import corporateImage from '../../assets/corporateevents.jpeg';
 // import Footer from '../../common-pages/Footer';
 
 function CorporatePage() {

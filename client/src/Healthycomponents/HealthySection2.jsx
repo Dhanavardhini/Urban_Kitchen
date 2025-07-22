@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import '../HealthyStyles/HealthySection2.css';
+import '../healthystyles/healthysection2.css';
 
 // ✅ Import different images for each card
 import img1 from '../assets/Hi-Protein-Paneer-Chole-Salad-Bowl.jpg';
@@ -16,10 +16,10 @@ import img5 from '../assets/Veggie-Delight-Salad.jpg';
 import img6 from '../assets/Spicy-Tikki-Salad.jpg';
 import img7 from '../assets/Simple-Cucumber-Salad.jpg';
 import img8 from '../assets/Code-Red-Salad.jpg';
-import img9 from '../assets/Healthy-Broccoli&MushroomSalad.jpg';
+import img9 from '../assets/Healthy-Broccoli-MushroomSalad.jpg';
 import img10 from '../assets/Lobia-Lentil-Salad-Bowl.jpg';
 import img11 from '../assets/Low-Calorie-Pasta-Salad-Bowl.jpg';
-import img12 from '../assets/Hi-Protein,Hi-Fibre-Sprouted-Salad.jpg';
+import img12 from '../assets/Hi-Protein-Hi-Fibre-Sprouted-Salad.jpg';
 
 const cardsData = [
   { imgSrc: img1, title: 'Hi-Protein Paneer Chole Salad Bowl', desc: 'Loaded with chickpeas & sprouts for a protein punch.' },

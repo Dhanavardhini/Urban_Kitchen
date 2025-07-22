@@ -5,42 +5,42 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../../../../Styles/CustomerChoice.css';
+import '../../../../styles/customerchoice.css';
 
-import CustomerSumbit from './CustomerSumbit';
+import CustomerSumbit from './customersumbit';
 
-import B1 from '../../../../assets/Meal/Meal1.png';
-import B2 from '../../../../assets/Meal/Meal2.png';
-import B3 from '../../../../assets/Meal/Meal3.png';
-import B4 from '../../../../assets/Meal/Meal4.png';
-import B5 from '../../../../assets/Meal/Meal5.png';
-import B6 from '../../../../assets/Meal/Meal6.png';
-import B7 from '../../../../assets/Meal/Meal7.png';
-import B8 from '../../../../assets/Meal/Meal1.png';
-import B9 from '../../../../assets/Meal/Meal2.png';
-import B10 from '../../../../assets/Meal/Meal3.png';
+import B1 from '../../../../assets/meal/meal1.png';
+import B2 from '../../../../assets/meal/meal2.png';
+import B3 from '../../../../assets/meal/meal3.png';
+import B4 from '../../../../assets/meal/meal4.png';
+import B5 from '../../../../assets/meal/meal5.png';
+import B6 from '../../../../assets/meal/meal6.png';
+import B7 from '../../../../assets/meal/meal7.png';
+import B8 from '../../../../assets/meal/meal1.png';
+import B9 from '../../../../assets/meal/meal2.png';
+import B10 from '../../../../assets/meal/meal3.png';
 
-import L1 from '../../../../assets/Meal/Meal1.png';
-import L2 from '../../../../assets/Meal/Meal2.png';
-import L3 from '../../../../assets/Meal/Meal3.png';
-import L4 from '../../../../assets/Meal/Meal4.png';
-import L5 from '../../../../assets/Meal/Meal5.png';
-import L6 from '../../../../assets/Meal/Meal6.png';
-import L7 from '../../../../assets/Meal/Meal7.png';
-import L8 from '../../../../assets/Meal/Meal1.png';
-import L9 from '../../../../assets/Meal/Meal2.png';
-import L10 from '../../../../assets/Meal/Meal3.png';
+import L1 from '../../../../assets/meal/meal1.png';
+import L2 from '../../../../assets/meal/meal2.png';
+import L3 from '../../../../assets/meal/meal3.png';
+import L4 from '../../../../assets/meal/meal4.png';
+import L5 from '../../../../assets/meal/meal5.png';
+import L6 from '../../../../assets/meal/meal6.png';
+import L7 from '../../../../assets/meal/meal7.png';
+import L8 from '../../../../assets/meal/meal1.png';
+import L9 from '../../../../assets/meal/meal2.png';
+import L10 from '../../../../assets/meal/meal3.png';
 
-import D1 from '../../../../assets/Meal/Meal1.png';
-import D2 from '../../../../assets/Meal/Meal2.png';
-import D3 from '../../../../assets/Meal/Meal3.png';
-import D4 from '../../../../assets/Meal/Meal4.png';
-import D5 from '../../../../assets/Meal/Meal5.png';
-import D6 from '../../../../assets/Meal/Meal6.png';
-import D7 from '../../../../assets/Meal/Meal7.png';
-import D8 from '../../../../assets/Meal/Meal1.png';
-import D9 from '../../../../assets/Meal/Meal2.png';
-import D10 from '../../../../assets/Meal/Meal3.png';
+import D1 from '../../../../assets/meal/meal1.png';
+import D2 from '../../../../assets/meal/meal2.png';
+import D3 from '../../../../assets/meal/meal3.png';
+import D4 from '../../../../assets/meal/meal4.png';
+import D5 from '../../../../assets/meal/meal5.png';
+import D6 from '../../../../assets/meal/meal6.png';
+import D7 from '../../../../assets/meal/meal7.png';
+import D8 from '../../../../assets/meal/meal1.png';
+import D9 from '../../../../assets/meal/meal2.png';
+import D10 from '../../../../assets/meal/meal3.png';
 
 const data = {
   Breakfast: [

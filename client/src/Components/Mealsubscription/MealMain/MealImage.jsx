@@ -44,13 +44,13 @@
 
 
 import React from 'react';
-import '../../../Styles/MealImage.css';
-import img1 from '../../../assets/Meal/Meal1.png';
-import img2 from '../../../assets/Meal/Meal2.png';
-import img3 from '../../../assets/Meal/Meal3.png';
-import img4 from '../../../assets/Meal/Meal4.png';
-import img5 from '../../../assets/Meal/Meal5.png';
-import img6 from '../../../assets/Meal/Meal6.png';
+import '../../../styles/mealimage.css';
+import img1 from '../../../assets/meal/meal1.png';
+import img2 from '../../../assets/meal/meal2.png';
+import img3 from '../../../assets/meal/meal3.png';
+import img4 from '../../../assets/meal/meal4.png';
+import img5 from '../../../assets/meal/meal5.png';
+import img6 from '../../../assets/meal/meal6.png';
 
 function MealImage() {
   return (

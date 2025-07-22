@@ -149,8 +149,8 @@
 // export default Franchisedes;
 
 import React, { useState } from 'react';
-import '../../../Styles/Franchisedes.css';
-import FranchisePopup from './FranchisePopup';
+import '../../../styles/franchisedes.css';
+import FranchisePopup from './franchisepopup';
 // import Footer from '../../../common-pages/Footer';
 
 function Franchisedes() {

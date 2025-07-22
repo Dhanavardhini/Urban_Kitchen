@@ -2,10 +2,10 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Jusstyles/JusBestDeal.css';
+import '../jusstyles/jusbestdeal.css';
 
-import bestDeal1 from '../assets/bestDeal1.png';
-import bestDeal from '../assets/Bestdeala1.png';
+import bestDeal1 from '../assets/bestdeal1.png';
+import bestDeal from '../assets/bestdeala1.png';
 import bestDeal2 from '../assets/bestdeal2.png';
 import sideImage from '../assets/bestright.png';
 

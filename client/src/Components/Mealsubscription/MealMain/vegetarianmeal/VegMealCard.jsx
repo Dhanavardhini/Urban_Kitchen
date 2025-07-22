@@ -1,9 +1,9 @@
 
 import React from 'react';
-import vegbreakfastItems from './VegMealBreakfast';
-import veglunchItems from './VegMealLunch';
-import vegdinnerItems from './VegMealDinner';
-import '../../../../Styles/WMCard.css';
+import vegbreakfastItems from './vegmealbreakfast';
+import veglunchItems from './vegmeallunch';
+import vegdinnerItems from './vegmealdinner';
+import '../../../../styles/wmcard.css';
 
 
 function VMealSection({ title, items }) {

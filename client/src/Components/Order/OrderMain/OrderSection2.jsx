@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../Styles/OrderSection2.css';
+import '../../../styles/ordersection2.css';
 import { FaMoneyBillWave, FaTruck } from 'react-icons/fa';
 import { GiPartyPopper, GiBroccoli } from 'react-icons/gi';
 

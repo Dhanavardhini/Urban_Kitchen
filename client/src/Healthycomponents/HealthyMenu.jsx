@@ -1,51 +1,51 @@
 
 
 import React, { useState } from "react";
-import "../HealthyStyles/HealthyMenu.css";
+import "../healthystyles/healthymenu.css";
 
 // ✅ Images
-import healthys1 from '../assets/Hi-Protein-Paneer-Chole-Salad-Bowl.jpg';
-import healthys2 from '../assets/Hi-Protein Kala Channa Salad Bowl.jpg';
-import healthys3 from '../assets/Code-Red-Salad.jpg';
-import healthys4 from '../assets/Veggie-Delight-Salad.jpg';
-import healthys7 from '../assets/Simple-Cucumber-Salad.jpg';
-import healthys8 from '../assets/Makhana Chaat Salad.jpg';
-import healthys9 from '../assets/Spicy-Tikki-Salad.jpg';
-import healthys10 from '../assets/Low-Calorie-Pasta-Salad-Bowl.jpg';
-import healthys11 from '../assets/Lobia-Lentil-Salad-Bowl.jpg';
-import healthys12 from '../assets/Noodle Salad Bowl.jpg';
-import healthys13 from '../assets/Protein-Rich-Rajma-Salad-Bowl.jpg';
-import healthys14 from '../assets/Protein-Rich-Peanut-Salad.jpg';
-import healthys15 from '../assets/Immunity-Booster-Salad.jpg';
-import healthys16 from '../assets/Feta Greek Salad .jpg';
-import healthys17 from '../assets/Healthy-Broccoli&MushroomSalad.jpg';
-import healthys18 from '../assets/Hi-Protein,Hi-Fibre-Sprouted-Salad.jpg';
+import healthys1 from '../assets/hi-protein-paneer-chole-salad-bowl.jpg';
+import healthys2 from '../assets/hi-proteinkalachannasaladbowl.jpg';
+import healthys3 from '../assets/code-red-salad.jpg';
+import healthys4 from '../assets/veggie-delight-salad.jpg';
+import healthys7 from '../assets/simple-cucumber-salad.jpg';
+import healthys8 from '../assets/makhanachaatsalad.jpg';
+import healthys9 from '../assets/spicy-tikki-salad.jpg';
+import healthys10 from '../assets/low-calorie-pasta-salad-bowl.jpg';
+import healthys11 from '../assets/lobia-lentil-salad-bowl.jpg';
+import healthys12 from '../assets/noodlesaladbowl.jpg';
+import healthys13 from '../assets/protein-rich-rajma-salad-bowl.jpg';
+import healthys14 from '../assets/protein-rich-peanut-salad.jpg';
+import healthys15 from '../assets/immunity-booster-salad.jpg';
+import healthys16 from '../assets/fetagreeksalad.jpg';
+import healthys17 from '../assets/healthy-broccoli-mushroomsalad.jpg';
+import healthys18 from '../assets/hi-Protein-hi-fibre-sprouted-salad.jpg';
 
-import healthym5 from '../assets/Berries Milk .jpg';
-import healthym6 from '../assets/Mango-Milk .jpg';
-import healthym8 from '../assets/Cold Coffee .jpg';
-import healthym9 from '../assets/Strawberry .jpg';
-import healthym10 from '../assets/Apple-Milk.jpg';
-import healthym7 from '../assets/Dark Chocolate Peanut Butter .jpg';
+import healthym5 from '../assets/berriesmilk.jpg';
+import healthym6 from '../assets/mango-milk.jpg';
+import healthym8 from '../assets/cold-coffee.jpg';
+import healthym9 from '../assets/strawberry.jpg';
+import healthym10 from '../assets/apple-milk.jpg';
+import healthym7 from '../assets/darkchocolatepeanutbutter.jpg';
 
-import healthyc7 from '../assets/Water Melon Salad Bowl.jpg';
-import healthyc8 from '../assets/Mixed-Fruit-Bowl.jpg';
-import healthyc9 from '../assets/Musk-Melon-Salad-Bowl.jpg';
-import healthyc10 from '../assets/Papaya Fruit Bowl.jpg';
-import healthyc11 from '../assets/Banana-Fruit-Bowl.jpg';
-import healthyc12 from '../assets/Mixed-Fruit-Bowl.jpg';
+import healthyc7 from '../assets/watermelonsaladbowl.jpg';
+import healthyc8 from '../assets/cutapplebowl.jpg';
+import healthyc9 from '../assets/musk-melon-salad-bowl.jpg';
+import healthyc10 from '../assets/papayafruitbowl.jpg';
+import healthyc11 from '../assets/banana-fruit-bowl.jpg';
+import healthyc12 from '../assets/mixed-fruit-bowl.jpg';
 
-import healthyd1 from '../assets/Green-Glow-Cool-Detox.jpg';
-import healthyd2 from '../assets/Tropical-Zest-Detox.jpg';
-import healthyd3 from '../assets/Crimson Crush .jpg';
-import healthyd4 from '../assets/Sunset Squeeze.jpg';
-import healthyd5 from '../assets/Citrus Cleanse.jpg';
-import healthyd6 from '../assets/Apple Mint Mist.jpg';
-import healthyd7 from '../assets/Summer Quench.jpg';
-import healthyd8 from '../assets/Golden-Kick.jpg';
-import healthyd9 from '../assets/ABC Elixir.jpg';
-import healthyd10 from '../assets/Glow Root.jpg';
-import healthyd11 from '../assets/Fresh Tide.jpg';
+import healthyd1 from '../assets/green-glow-cool-detox.jpg';
+import healthyd2 from '../assets/tropical-zest-detox.jpg';
+import healthyd3 from '../assets/crimsoncrush.jpg';
+import healthyd4 from '../assets/sunsetsqueeze.jpg';
+import healthyd5 from '../assets/citruscleanse.jpg';
+import healthyd6 from '../assets/applemintmist.jpg';
+import healthyd7 from '../assets/summerquench.jpg';
+import healthyd8 from '../assets/golden-kick.jpg';
+import healthyd9 from '../assets/abc-elixir.jpg';
+import healthyd10 from '../assets/glowroot.jpg';
+import healthyd11 from '../assets/freshtide.jpg';
 
 const categories = [
   // "All",

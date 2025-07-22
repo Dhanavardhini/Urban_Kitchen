@@ -54,7 +54,7 @@
 
 
 import React from 'react';
-import '../../Styles/Careerhome.css';
+import '../../styles/careerhome.css';
 import deliveryImg from '../../assets/career.jpg';
 
 function splitWords(text, baseClass, delayOffset = 0) {

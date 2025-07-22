@@ -24,7 +24,7 @@
 
 // export default CareerSec1;
 import React from 'react';
-import '../../Styles/CareerSec1.css';
+import '../../styles/careersec1.css';
 
 function CareerSec1() {
   return (

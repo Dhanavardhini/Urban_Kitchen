@@ -1,13 +1,13 @@
 
 
 import React from 'react';
-import '../Styles/Hero.css';
+import '../styles/hero.css';
 import { Link } from 'react-router-dom';
-import UrbanVibes from '../assets/Urban Vibes-Pica.png';
-import Healthy from '../assets/Fresh & Healthy-Pica1.png';
-import HealthyBowls from '../assets/Healthy Bowls1-Pica1.png';
-import HotSpicy from '../assets/Hot & Spicy-Pica1.png';
-import TastyDelights from '../assets/Tasty Delights-Pica1.png';
+import UrbanVibes from '../assets/urbanvibes-pica.png';
+import Healthy from '../assets/fresh-healthy-pica1.png';
+import HealthyBowls from '../assets/healthybowls1-pica1.png';
+import HotSpicy from '../assets/hot-spicy-pica1.png';
+import TastyDelights from '../assets/tastydelights-pica1.png';
 // import Footer from '../Common-pages/Footer';
 
 const slides = [

@@ -1,5 +1,5 @@
 import React from 'react'
-import HealthyBrand from './HealthyBrand'
+import HealthyBrand from './healthybrand'
 // import Footer from '../../common-pages/Footer'
 // import HealthyMenu from './HealthyMenu'
 

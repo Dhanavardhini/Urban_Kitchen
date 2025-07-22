@@ -5,7 +5,7 @@ import {
   FaBars, FaTimes
 } from "react-icons/fa";
 import { useLocation, useNavigate, Link } from "react-router-dom";
-import "../Common-styles/Navbar.css";
+import "../common-styles/navbar.css";
 import logo from "../assets/urbanlogo.jpg";
 
 const Navbar = () => {

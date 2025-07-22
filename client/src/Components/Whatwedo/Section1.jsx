@@ -54,7 +54,7 @@
 // export default Section1;
 
 import React from 'react';
-import '../../Styles/Section1.css';
+import '../../styles/section1.css';
 import kitchenImage from '../../assets/ab.png';
 import { FaUtensils, FaLeaf } from 'react-icons/fa';
 

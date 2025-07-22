@@ -1,6 +1,6 @@
 
 import React from 'react';
-import '../HealthyStyles/HealthySection3.css';
+import '../healthystyles/healthysection3.css';
 import s31 from '../assets/right.jpeg';
 import s32 from '../assets/left.jpeg';
 

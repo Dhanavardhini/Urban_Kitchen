@@ -1,4 +1,4 @@
-import B1 from "../../../../assets/Meal/Meal1.png"
+import B1 from "../../../../assets/meal/meal1.png"
 
 
 const WeightbreakfastItems = [

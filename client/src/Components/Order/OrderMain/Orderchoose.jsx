@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../Styles/Orderchoose.css';
+import '../../../styles/orderchoose.css';
 import { FaConciergeBell } from 'react-icons/fa';
 import { MdTableRestaurant, MdOutlinePhoneIphone } from 'react-icons/md';
 

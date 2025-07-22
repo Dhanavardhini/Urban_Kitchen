@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdEmail } from 'react-icons/md'; // <-- Mail icon
-import '../../Styles/CareerSec2.css';
+import '../../styles/careersec2.css';
 
 function Careersec2() {
   return (

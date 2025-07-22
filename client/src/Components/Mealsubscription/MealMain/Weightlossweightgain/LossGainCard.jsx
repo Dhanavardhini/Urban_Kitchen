@@ -1,9 +1,9 @@
 
 import React from 'react';
-import WeightbreakfastItems from './WeightBreakfast';
-import WeightlunchItems from './WeightLunch';
-import WeightdinnerItems from './WeightDinner';
-import '../../../../Styles/WMCard.css';
+import WeightbreakfastItems from './weightbreakfast';
+import WeightlunchItems from './weightlunch';
+import WeightdinnerItems from './weightdinner';
+import '../../../../styles/wmcard.css';
 
 
 function LossGainCardSection({ title, items }) {

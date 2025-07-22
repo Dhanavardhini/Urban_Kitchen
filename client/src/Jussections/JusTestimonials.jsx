@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
-import '../Jusstyles/JusTestimonials.css'; // Your custom CSS
+import '../jusstyles/justestimonials.css'; // Your custom CSS
 import t1 from '../assets/man.png';
 import t2 from '../assets/woman.png';
 import t3 from '../assets/avatar.png';

@@ -6,12 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../../../../Styles/CustomerFrom.css';
-import FL from '../form/FL';
-import Phone from '../form/Phone';
-import Email from '../form/Email';
-import SelectPlan from '../form/SelectPlan';
-import Selectplanduration from '../form/Selectplanduration';
+import '../../../../styles/customerfrom.css';
+import FL from '../form/fl';
+import Phone from '../form/phone';
+import Email from '../form/email';
+import SelectPlan from '../form/selectplan';
+import Selectplanduration from '../form/selectplanduration';
 
 function CustomerForm({ selectedItems = [], clearSelectedItems }) {
   const navigate = useNavigate();

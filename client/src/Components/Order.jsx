@@ -1,5 +1,5 @@
 import React from 'react'
-import OrderMain from './Order/OrderMain'
+import OrderMain from './Order/ordermain'
 // import Footer from '../common-pages/Footer'
 
 function Order() {

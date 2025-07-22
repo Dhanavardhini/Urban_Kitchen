@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/FamilySection.css';
+import '../../styles/familysection.css';
 
 function FamilySection() {
   return (

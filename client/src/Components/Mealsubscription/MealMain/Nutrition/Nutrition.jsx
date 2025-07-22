@@ -1,6 +1,6 @@
 import React from 'react'
-import NutritionContent from './NutritionContent'
-import NutritionForm from './NutritionFrom'
+import NutritionContent from './nutritioncontent'
+import NutritionForm from './nutritionfrom'
 
 function Nutrition() {
   return (

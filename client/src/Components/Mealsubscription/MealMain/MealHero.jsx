@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import '../../../Styles/MealHero.css';
-import Meal1 from '../../../assets/Meal/Meal5.png';
-import Meal2 from '../../../assets/Meal/Meal6.png';
-import Meal3 from '../../../assets/Meal/Meal7.png';
+import '../../../styles/mealhero.css';
+import Meal1 from '../../../assets/meal/meal5.png';
+import Meal2 from '../../../assets/meal/meal6.png';
+import Meal3 from '../../../assets/meal/meal7.png';
 
 // Custom Next Arrow
 function NextArrow({ onClick }) {

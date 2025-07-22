@@ -32,7 +32,7 @@
 
 import React from 'react';
 import TextField from '@mui/material/TextField';
-import '../../../../Styles/Form/FL.css';
+import '../../../../styles/form/fl.css';
 
 function FL({ firstName, lastName, onChange }) {
   return (

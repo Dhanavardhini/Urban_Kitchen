@@ -1,12 +1,12 @@
 
 
 import React, { useState, useEffect } from 'react';
-import '../HealthyStyles/HealthyNavbar.css';
-import logo from '../assets/Healthy-Salad-and-Detox-copy.png';
+import '../healthystyles/healthynavbar.css';
+import logo from '../assets/healthy-salad-and-detox-copy.png';
 import { FaBars, FaTimes, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
-import HealthyMenu from '../healthycomponents/HealthyMenu';
-import HealthyPopup from '../healthycomponents/HealthyPopup';
-import HealthyPopup1 from '../../public/Healthy Salads & Detox Menu Card.pdf';
+import HealthyMenu from '../healthycomponents/healthymenu';
+import HealthyPopup from '../healthycomponents/healthypopup';
+import HealthyPopup1 from '../../public/healthy-salads-detox-menu-card.pdf';
 
 function HealthyNavbar() {
   const [isMenuOpenh, setIsMenuOpenh] = useState(false);

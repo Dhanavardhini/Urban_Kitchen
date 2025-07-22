@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Counts.css';
+import '../../styles/counts.css';
 
 function Counts() {
   return (

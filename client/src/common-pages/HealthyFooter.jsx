@@ -1,11 +1,11 @@
 
 import React from 'react';
-import '../Healthystyles/HealthyFooter.css';
+import '../healthystyles/healthyfooter.css';
 import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import ukIcon from '../assets/urbanlogo.jpg';
 import pxIcon from '../assets/px-logo.png';
-import jus from '../assets/Jus Friez logo.jpg';
+import jus from '../assets/jusfriezlogo.jpg';
 
 
 function HealthyFooter() {

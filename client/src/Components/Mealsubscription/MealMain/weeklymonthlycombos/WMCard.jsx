@@ -1,9 +1,9 @@
 
 import React from 'react';
-import breakfastItems from './WMBreakfast';
-import lunchItems from './WMLunch';
-import dinnerItems from './WMDinner';
-import '../../../../Styles/WMCard.css';
+import breakfastItems from './wmbreakfast';
+import lunchItems from './wmlunch';
+import dinnerItems from './wmdinner';
+import '../../../../styles/wmcard.css';
 
 
 function WMealSection({ title, items }) {

@@ -1,4 +1,4 @@
-import L1 from "../../../../assets/Meal/Meal2.png"
+import L1 from "../../../../assets/meal/meal2.png"
 
 
 const lunchItems = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Online.css';
+import '../../styles/online.css';
 
 function Online() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Styles/BrandCarousel.css';
-import a from "../../assets/Salads.png";
+import '../../styles/brandcarousel.css';
+import a from "../../assets/salads.png";
 import b from "../../assets/jf.jpg";
 import c from "../../assets/px.jpg";
 

@@ -182,42 +182,42 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import './App.css';
 
-import Navbar from './common-pages/Navbar';
-import Hero from './Components/Hero';
+import Navbar from './common-pages/navbar';
+import Hero from './components/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Whatwedo from './Components/Whatwedo';
-import Ourbrand from './Components/Ourbrand';
-import Order from './Components/Order';
-import BirthdayMain from './Components/birthdaycelebrations/BirthdayMain';
-import CorporateMain from './Components/corporateevents/CorporateMain';
-import FamilyMain from './Components/familygatherings/FamilyMain';
-import PartyMain from './Components/partyplatters/PartyMain';
-import Carreer from './Components/Carreer';
-import JusPage from './Components/ourbrand/JusPage';
-import HealthyPage from './Components/ourbrand/HealthyPage';
-import ProteinPage from './Components/ourbrand/ProteinPage';
-import BirthdayPage from './Components/birthdaycelebrations/BirthdayPage';
-import CorporatePage from './Components/corporateevents/CorporatePage';
-import PartyPage from './Components/partyplatters/PartyPage';
-import FamilyPage from './Components/familygatherings/FamilyPage';
-import FranchiseMain from './Components/Franchise/FranchiseMain';
-import HealthyHome from './healthycomponents/HealthyHome';
-import JusHome from './jussections/JusHome';
-import Pronav from './protien/Pronav';
-import MealSubscription from './Components/MealSubscription';
+import Whatwedo from './components/whatwedo';
+import Ourbrand from './components/ourbrand';
+import Order from './components/order';
+import BirthdayMain from './components/birthdaycelebrations/birthdaymain';
+import CorporateMain from './components/corporateevents/corporatemain';
+import FamilyMain from './components/familygatherings/familymain';
+import PartyMain from './components/partyplatters/partymain';
+import Carreer from './components/carreer';
+import JusPage from './components/ourbrand/juspage';
+import HealthyPage from './components/ourbrand/healthypage';
+import ProteinPage from './components/ourbrand/proteinpage';
+import BirthdayPage from './components/birthdaycelebrations/birthdaypage';
+import CorporatePage from './components/corporateevents/corporatepage';
+import PartyPage from './components/partyplatters/partypage';
+import FamilyPage from './components/familygatherings/familypage';
+import FranchiseMain from './components/franchise/franchisemain';
+import HealthyHome from './healthycomponents/healthyhome';
+import JusHome from './jussections/jushome';
+// import Pronav from './protien/pronav';
+import MealSubscription from './components/mealsubscription';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import CustomerSumbit from './Components/Mealsubscription/MealMain/customer/CustomerSumbit';
-import ScrollToTop from './Components/ScrollToTop';
-import WMCombo from './Components/Mealsubscription/MealMain/weeklymonthlycombos/WMCombo';
-import VegetarianMeal from './Components/Mealsubscription/MealMain/vegetarianmeal/VegetarianMeal';
-import Weightlossweightgain from './Components/Mealsubscription/MealMain/weightlossweightgain/Weightlossweightgain';
-import Nutrition from './Components/Mealsubscription/MealMain/nutrition/Nutrition';
-import CustomerChoice from './Components/Mealsubscription/MealMain/customer/CustomerChoice';
-import Footer from './common-pages/Footer';
+import CustomerSumbit from './components/mealsubscription/mealmain/customer/customersumbit';
+import ScrollToTop from './components/scrolltotop';
+import WMCombo from './components/mealsubscription/mealmain/weeklymonthlycombos/wmcombo';
+import VegetarianMeal from './components/mealsubscription/mealmain/vegetarianmeal/vegetarianmeal';
+import Weightlossweightgain from './components/mealsubscription/mealmain/weightlossweightgain/weightlossweightgain';
+import Nutrition from './components/mealsubscription/mealmain/nutrition/nutrition';
+import CustomerChoice from './components/mealsubscription/mealmain/customer/customerchoice';
+import Footer from './common-pages/footer';
 
 const routes = [
   { path: '/', element: <Hero /> },
@@ -232,7 +232,7 @@ const routes = [
   { path: '/Franchise', element: <FranchiseMain /> },
   { path: '/healthy-salads', element: <HealthyHome /> },
   { path: '/jusfriez', element: <JusHome /> },
-  { path: '/p', element: <Pronav/> },
+  // { path: '/p', element: <Pronav/> },
   { path: '/mealsubscription', element: <MealSubscription/> },
 
   { path: '/order/birthday', element: <BirthdayPage /> },

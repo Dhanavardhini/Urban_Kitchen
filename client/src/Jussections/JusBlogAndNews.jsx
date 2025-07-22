@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import deliveryperson from '../assets/Online_Shoping.png';
+import deliveryperson from '../assets/online-shoping.png';
 import deliveryleft from '../assets/leftd.png';
 
-import '../Jusstyles/JusBlogAndNews.css';
+import '../jusstyles/jusblogandnews.css';
 
 const JusBlogAndNews = () => {
   // State to track if elements are visible

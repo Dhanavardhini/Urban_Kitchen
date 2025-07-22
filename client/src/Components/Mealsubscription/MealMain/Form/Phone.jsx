@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
-import '../../../../Styles/Form/Phone.css';
+import '../../../../styles/form/phone.css';
 
 function Phone({ value, onChange }) {
   return (

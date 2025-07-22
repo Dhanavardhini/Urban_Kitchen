@@ -1,10 +1,10 @@
 
 import React from 'react';
-import '../Jusstyles/JusFooter.css';
-import JusFriezlogo from '../assets/Jus Friez logo.jpg';
+import '../jusstyles/jusfooter.css';
+import JusFriezlogo from '../assets/jusfriezlogo.jpg';
 import ukIcon from '../assets/urbanlogo.jpg';
 import pxIcon from '../assets/px-logo.png';
-import hsd from '../assets/Healthy-Salad-and-Detox-copy.png';
+import hsd from '../assets/healthy-salad-and-detox-copy.png';
 
 
 const JusFooter = () => {

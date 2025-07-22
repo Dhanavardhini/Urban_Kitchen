@@ -1,5 +1,5 @@
 import React from "react";
-import "../HealthyStyles/HealthyPopup.css";
+import "../healthyStyles/healthyPopup.css";
 import { FaTimes } from "react-icons/fa"; // ✅ Import the X icon
 
 function HealthyPopup({ onClose, children }) {

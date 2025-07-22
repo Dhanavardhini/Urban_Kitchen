@@ -1,14 +1,14 @@
 
 import React from 'react';
-import '../HealthyStyles/HealthySection5.css';
+import '../healthystyles/healthysection5.css';
 
-import img1 from '../assets/Musk-Melon-Salad-Bowl.jpg';
-import img2 from '../assets/Apple-Milk.jpg';
-import img3 from '../assets/Mixed-Fruit-Bowl.jpg';
+import img1 from '../assets/musk-melon-salad-bowl.jpg';
+import img2 from '../assets/apple-milk.jpg';
+import img3 from '../assets/mixed-fruit-bowl.jpg';
 
-import img4 from '../assets/Cold-Coffee.jpg';
-import img6 from '../assets/Golden-Kick.jpg';
-import img5 from '../assets/Banana-Fruit-Bowl.jpg';
+import img4 from '../assets/coldcoffee .jpg';
+import img6 from '../assets/golden-kick.jpg';
+import img5 from '../assets/banana-fruit-bowl.jpg';
 
 function HealthySection5() {
   const images = [img1, img2, img3, img4, img5, img6];

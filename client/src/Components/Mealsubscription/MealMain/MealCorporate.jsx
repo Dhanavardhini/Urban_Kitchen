@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../../Styles/MealCorporate.css';
-import img1 from '../../../assets/Meal/Meal1.png';
-import img2 from '../../../assets/Meal/Meal2.png';
-import img3 from '../../../assets/Meal/Meal3.png';
-import icon1 from '../../../assets/Meal/Meal4.png';
-import icon2 from '../../../assets/Meal/Meal2.png';
-import icon3 from '../../../assets/Meal/Meal3.png';
+import '../../../styles/mealcorporate.css';
+import img1 from '../../../assets/meal/meal1.png';
+import img2 from '../../../assets/meal/meal2.png';
+import img3 from '../../../assets/meal/meal3.png';
+import icon1 from '../../../assets/meal/meal4.png';
+import icon2 from '../../../assets/meal/meal2.png';
+import icon3 from '../../../assets/meal/meal3.png';
 
 function MealCorporate() {
   return (
