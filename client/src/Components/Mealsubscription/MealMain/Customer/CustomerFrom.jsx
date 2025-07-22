@@ -51,11 +51,18 @@ function CustomerForm({ selectedItems = [], clearSelectedItems }) {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/customer-form', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, selectedItems }),
-      });
+      // const response = await fetch('http://localhost:5000/customer-form', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify({ ...formData, selectedItems }),
+      // });
+
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/customer-form`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ ...formData, selectedItems }),
+});
+
 
       if (response.ok) {
         toast.success('Selected menu was sent successfully!', {

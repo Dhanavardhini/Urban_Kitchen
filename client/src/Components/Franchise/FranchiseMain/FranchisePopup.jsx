@@ -181,12 +181,19 @@ const FranchisePopup = ({ toggleForm }) => {
     } else {
       try {
         // const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
-        const response = await fetch('http://localhost:5000/send-franchise-request', {
+        // const response = await fetch('http://localhost:5000/send-franchise-request', {
 
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
-        });
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify(formData)
+        // });
+
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send-franchise-request`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData),
+});
+
         if (response.ok) {
           setShowToast(true);
         }

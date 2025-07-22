@@ -42,11 +42,18 @@ function WMForm() {
         formDataToSend.append(key, tempData[key]);
       });
 
-      const res = await fetch('http://localhost:5000/common-form', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(formData),
-});
+//       const res = await fetch('http://localhost:5000/common-form', {
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(formData),
+// });
+const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/common-form`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+  });
 
       if (res.ok) {
         showToast('success', '✔️ Menu was sent successfully!');

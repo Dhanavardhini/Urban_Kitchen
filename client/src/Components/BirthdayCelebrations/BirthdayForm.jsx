@@ -145,8 +145,12 @@ function BirthdayForm() {
 
     setLoading(true);
     try {
-      // await axios.post('https://jsonplaceholder.typicode.com/posts', formData);
-      await axios.post('http://localhost:5000/event-mail', formData);
+      // await axios.post('http://localhost:5000/event-mail', formData);
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/event-mail`, formData);
+
+
+      // await axios.post('https://urban-kitchen.onrender.com/event-mail', formData);
+
       setSuccess(true);
       setFormData({
         name: '',
