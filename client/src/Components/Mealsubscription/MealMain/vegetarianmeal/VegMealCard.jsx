@@ -1,8 +1,8 @@
 
 import React from 'react';
-import vegbreakfastItems from './vegmealbreakfast';
-import veglunchItems from './vegmeallunch';
-import vegdinnerItems from './vegmealdinner';
+import vegbreakfastItems from './VegmealBreakfast';
+import veglunchItems from './VegmealLunch';
+import vegdinnerItems from './VegmealDinner';
 import '../../../../styles/wmcard.css';
 
 

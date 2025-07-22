@@ -1,8 +1,8 @@
 
 import React from 'react';
-import breakfastItems from './wmbreakfast';
-import lunchItems from './wmlunch';
-import dinnerItems from './wmdinner';
+import breakfastItems from './WmBreakfast';
+import lunchItems from './WmLunch';
+import dinnerItems from './WmDinner';
 import '../../../../styles/wmcard.css';
 
 

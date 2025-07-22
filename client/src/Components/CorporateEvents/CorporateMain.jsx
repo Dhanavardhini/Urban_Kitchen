@@ -1,6 +1,6 @@
 import React from 'react'
-import Corporatesection from './corporatesection'
-import BirthdayForm from '../birthdaycelebrations/birthdayform'
+import Corporatesection from './CorporateSection'
+import BirthdayForm from '../birthdaycelebrations/BirthdayForm'
 // import Footer from '../../common-pages/footer'
 
 

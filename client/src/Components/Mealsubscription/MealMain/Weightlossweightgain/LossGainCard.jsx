@@ -1,8 +1,8 @@
 
 import React from 'react';
-import WeightbreakfastItems from './weightbreakfast';
-import WeightlunchItems from './weightlunch';
-import WeightdinnerItems from './weightdinner';
+import WeightbreakfastItems from './WeightBreakfast';
+import WeightlunchItems from './WeightLunch';
+import WeightdinnerItems from './WeightDinner';
 import '../../../../styles/wmcard.css';
 
 

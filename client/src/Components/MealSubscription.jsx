@@ -1,9 +1,9 @@
 import React from 'react'
-import MealHero from './Mealsubscription/MealMain/mealhero'
-import MealCard from './Mealsubscription/MealMain/mealcard'
-import MealPlanDuration from './Mealsubscription/MealMain/mealplanduration'
-import MealCorporate from './Mealsubscription/MealMain/mealcorporate'
-import MealImage from './Mealsubscription/MealMain/mealimage'
+import MealHero from './mealsubscription/mealmain/MealHero'
+import MealCard from './mealsubscription/mealmain/MealCard'
+import MealPlanDuration from './mealsubscription/mealmain/MealPlanduration'
+import MealCorporate from './mealsubscription/mealmain/MealCorporate'
+import MealImage from './mealsubscription/mealmain/MealImage'
 
 function MealSubscription() {
   return (

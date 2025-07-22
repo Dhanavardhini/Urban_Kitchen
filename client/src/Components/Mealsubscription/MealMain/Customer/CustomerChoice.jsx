@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../../../../styles/customerchoice.css';
 
-import CustomerSumbit from './customersumbit';
+import CustomerSumbit from './CustomerSumbit';
 
 import B1 from '../../../../assets/meal/meal1.png';
 import B2 from '../../../../assets/meal/meal2.png';

@@ -155,7 +155,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../../../../styles/customersumbit.css';
-import CustomerForm from './customerfrom';
+import CustomerForm from './CustomerFrom';
 
 function CustomerSumbit() {
   const location = useLocation();

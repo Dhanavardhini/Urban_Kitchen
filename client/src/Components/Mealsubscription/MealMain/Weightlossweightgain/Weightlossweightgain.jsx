@@ -1,6 +1,6 @@
 import React from 'react'
-import LossGainCard from './lossgaincard'
-import WMForm from '../weeklymonthlycombos/wmform'
+import LossGainCard from './LossgainCard'
+import WMForm from '../weeklymonthlycombos/WmForm'
 
 function Weightlossweightgain() {
   return (

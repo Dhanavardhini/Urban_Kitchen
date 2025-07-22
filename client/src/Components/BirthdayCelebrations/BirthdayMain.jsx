@@ -1,6 +1,6 @@
 import React from 'react'
-import Birthdaysection1 from './birthdaysection1'
-import BirthdayForm from './birthdayform'
+import Birthdaysection1 from './BirthdaySection1'
+import BirthdayForm from './BirthdayForm'
 // import Footer from '../../common-pages/Footer'
 
 function BirthdayMain() {

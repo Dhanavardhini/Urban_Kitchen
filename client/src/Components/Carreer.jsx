@@ -1,8 +1,8 @@
 import React from 'react'
-import Careerhome from './carrer/careerhome'
+import Careerhome from './carrer/CareerHome'
 // import Footer from '../Common-pages/Footer'
-import CareerSec1 from './carrer/careersec1'
-import Careersec2 from './carrer/careersec2'
+import CareerSec1 from './carrer/CareerSec1'
+import Careersec2 from './carrer/CareerSec2'
 
 function Carreer() {
   return (

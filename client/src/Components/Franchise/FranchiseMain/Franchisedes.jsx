@@ -150,7 +150,7 @@
 
 import React, { useState } from 'react';
 import '../../../styles/franchisedes.css';
-import FranchisePopup from './franchisepopup';
+import FranchisePopup from './FranchisePopup';
 // import Footer from '../../../common-pages/Footer';
 
 function Franchisedes() {

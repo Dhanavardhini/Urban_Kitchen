@@ -1,6 +1,6 @@
 import React from 'react'
-import Partysection from './partysection'
-import BirthdayForm from '../birthdaycelebrations/birthdayform'
+import Partysection from './PartySection'
+import BirthdayForm from '../birthdaycelebrations/BirthdayForm'
 // import Footer from '../../common-pages/Footer'
 
 function PartyMain() {

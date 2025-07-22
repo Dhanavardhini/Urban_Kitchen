@@ -1,6 +1,6 @@
 import React from 'react'
-import VegMealCard from './vegmealcard'
-import WMForm from '../weeklymonthlycombos/wmform'
+import VegMealCard from './VegmealCard'
+import WMForm from '../weeklymonthlycombos/WmForm'
 
 function VegetarianMeal() {
   return (
