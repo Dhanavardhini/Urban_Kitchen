@@ -184,7 +184,6 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import './App.css';
 
 import Navbar from './common-pages/Navbar.jsx';
-import Hero from './components/Hero.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Whatwedo from './components/WhatWedo.jsx';
@@ -219,9 +218,10 @@ import Weightlossweightgain from './components/mealsubscription/mealmain/weightl
 import Nutrition from './components/mealsubscription/mealmain/nutrition/Nutrition.jsx';
 import CustomerChoice from './components/mealsubscription/mealmain/customer/CustomerChoice.jsx';
 import Footer from './common-pages/Footer.jsx';
+import Hero from './components/Hero.jsx';
 
 const routes = [
-  { path: '/', element: <Hero /> },
+  { path: '/', element: <Hero/> },
   { path: '/Whatwedo', element: <Whatwedo /> },
   { path: '/Ourbrand', element: <Ourbrand /> },
   { path: '/birthday', element: <BirthdayMain /> },
