@@ -19,8 +19,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import logo from '../assets/jusfriezlogo.jpg';
 import dlogo from '../assets/deliverylogo1.png';
-import JusPopup from '../jussections/JusPopup';
-import JusMenu from '../jussections/JusMenu';
+import JusPopup from '../jussections/JusPopup.jsx';
+import JusMenu from '../jussections/JusMenu.jsx';
 import JusPdf from '../../public/jus-friez-menu-card.pdf';
 
 const navItems = ['Home', 'Best Deal', 'Food Menu', 'Blog & News'];

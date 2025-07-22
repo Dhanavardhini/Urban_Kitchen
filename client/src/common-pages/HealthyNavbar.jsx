@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import '../healthystyles/healthynavbar.css';
 import logo from '../assets/healthy-salad-and-detox-copy.png';
 import { FaBars, FaTimes, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
-import HealthyMenu from '../healthycomponents/HealthyMenu';
-import HealthyPopup from '../healthycomponents/HealthyPopup';
+import HealthyMenu from '../healthycomponents/HealthyMenu.jsx';
+import HealthyPopup from '../healthycomponents/HealthyPopup.jsx';
 import HealthyPopup1 from '../../public/healthy-salads-detox-menu-card.pdf';
 
 function HealthyNavbar() {

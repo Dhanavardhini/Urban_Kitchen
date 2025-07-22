@@ -1,6 +1,6 @@
 import React from 'react'
-import WMCard from './WmCard'
-import WMForm from './WmForm'
+import WMCard from './WmCard.jsx'
+import WMForm from './WmForm.jsx'
 
 function WMCombo() {
   return (

@@ -1,13 +1,13 @@
 
 import React from 'react';
-import JusNavbar from '../common-pages/JusNavbar';
-import JusHomePage from '../juspage/JushomePage';
-import JusBestDeal from './JusbestDeal';
-import JusFoodMenu from './JusfoodMenu';
-import JusBlogAndNews from './JusblogandNews';
-import JusEnjoyPage from './JusenjoyPage';
-import JusTestimonials from './JusTestimonials';
-import JusFooter from '../common-pages/JusFooter';
+import JusNavbar from '../common-pages/JusNavbar.jsx';
+import JusHomePage from '../juspage/JushomePage.jsx';
+import JusBestDeal from './JusbestDeal.jsx';
+import JusFoodMenu from './JusfoodMenu.jsx';
+import JusBlogAndNews from './JusblogandNews.jsx';
+import JusEnjoyPage from './JusenjoyPage.jsx';
+import JusTestimonials from './JusTestimonials.jsx';
+import JusFooter from '../common-pages/JusFooter.jsx';
 import '../Jusstyles/Jusd.css'; 
 
 function JusHome() {

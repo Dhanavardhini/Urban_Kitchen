@@ -7,11 +7,11 @@ import Button from '@mui/material/Button';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../../../../styles/customerfrom.css';
-import FL from '../form/Fl';
-import Phone from '../form/Phone';
-import Email from '../form/Email';
-import SelectPlan from '../form/SelectPlan';
-import Selectplanduration from '../form/SelectPlanduration';
+import FL from '../form/Fl.jsx';
+import Phone from '../form/Phone.jsx';
+import Email from '../form/Email.jsx';
+import SelectPlan from '../form/SelectPlan.jsx';
+import Selectplanduration from '../form/SelectPlanduration.jsx';
 
 function CustomerForm({ selectedItems = [], clearSelectedItems }) {
   const navigate = useNavigate();

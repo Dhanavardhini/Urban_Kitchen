@@ -1,14 +1,14 @@
 import React from 'react';
 import '../healthystyles/healthyd.css';
-import HealthyNavbar from '../common-pages/HealthyNavbar';
-import HealthyHomePage from './HealthyhomePage';
-import HealthySection1 from './HealthySection1';
-import HealthySection2 from './HealthySection2';
-import HealthySection3 from './HealthySection3';
-import HealthySection4 from './HealthySection4';
-import HealthySection5 from './HealthySection5';
-import HealthySection6 from './HealthySection6';
-import HealthyFooter from '../common-pages/HealthyFooter';
+import HealthyNavbar from '../common-pages/HealthyNavbar.jsx';
+import HealthyHomePage from './HealthyhomePage.jsx';
+import HealthySection1 from './HealthySection1.jsx';
+import HealthySection2 from './HealthySection2.jsx';
+import HealthySection3 from './HealthySection3.jsx';
+import HealthySection4 from './HealthySection4.jsx';
+import HealthySection5 from './HealthySection5.jsx';
+import HealthySection6 from './HealthySection6.jsx';
+import HealthyFooter from '../common-pages/HealthyFooter.jsx';
 
 function HealthyHome() {
   return (
