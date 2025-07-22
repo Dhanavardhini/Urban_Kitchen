@@ -8,7 +8,7 @@ import Healthy from '../assets/Fresh & Healthy-Pica1.png';
 import HealthyBowls from '../assets/Healthy Bowls1-Pica1.png';
 import HotSpicy from '../assets/Hot & Spicy-Pica1.png';
 import TastyDelights from '../assets/Tasty Delights-Pica1.png';
-import Footer from '../common-pages/Footer';
+// import Footer from '../Common-pages/Footer';
 
 const slides = [
   {

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../Styles/CorporatePage.css';
 import corporateImage from '../../assets/Corporate Events.jpeg';
-import Footer from '../../common-pages/Footer';
+// import Footer from '../../common-pages/Footer';
 
 function CorporatePage() {
   const navigate = useNavigate();

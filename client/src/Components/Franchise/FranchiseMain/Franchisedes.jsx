@@ -151,7 +151,7 @@
 import React, { useState } from 'react';
 import '../../../Styles/Franchisedes.css';
 import FranchisePopup from './FranchisePopup';
-import Footer from '../../../common-pages/Footer';
+// import Footer from '../../../common-pages/Footer';
 
 function Franchisedes() {
   const [showForm, setShowForm] = useState(false);

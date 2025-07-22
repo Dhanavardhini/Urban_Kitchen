@@ -8,7 +8,7 @@ import HealthySection3 from './HealthySection3';
 import HealthySection4 from './HealthySection4';
 import HealthySection5 from './HealthySection5';
 import HealthySection6 from './HealthySection6';
-import HealthyFooter from '../common-pages/HealthyFooter';
+import HealthyFooter from '../Common-pages/HealthyFooter';
 
 function HealthyHome() {
   return (

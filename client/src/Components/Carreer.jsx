@@ -1,6 +1,6 @@
 import React from 'react'
 import Careerhome from './Carrer/Careerhome'
-import Footer from '../common-pages/Footer'
+// import Footer from '../Common-pages/Footer'
 import CareerSec1 from './Carrer/CareerSec1'
 import Careersec2 from './Carrer/Careersec2'
 

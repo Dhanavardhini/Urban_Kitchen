@@ -45,7 +45,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../Styles/BirthdayPage.css';
 import birthdayImage from '../../assets/Birthday.jpeg';
-import Footer from '../../common-pages/Footer';
+// import Footer from '../../common-pages/Footer';
 
 function BirthdayPage() {
   const navigate = useNavigate();

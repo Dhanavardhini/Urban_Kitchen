@@ -182,7 +182,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import './App.css';
 
-import Navbar from './common-pages/Navbar';
+import Navbar from './Common-pages/Navbar';
 import Hero from './Components/Hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -205,7 +205,7 @@ import FranchiseMain from './Components/Franchise/FranchiseMain';
 import HealthyHome from './Healthycomponents/HealthyHome';
 import JusHome from './Jussections/JusHome';
 import Pronav from './Protien/Pronav';
-import Footer from './common-pages/Footer';
+import Footer from './Common-pages/Footer';
 import MealSubscription from './Components/MealSubscription';
 
 import "slick-carousel/slick/slick.css";

@@ -1,6 +1,6 @@
 import React from 'react'
 import OrderMain from './Order/OrderMain'
-import Footer from '../common-pages/Footer'
+// import Footer from '../common-pages/Footer'
 
 function Order() {
   return (
